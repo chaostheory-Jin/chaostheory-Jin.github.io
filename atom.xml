@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-09-03T10:53:44.928Z</updated>
+  <updated>2021-09-05T01:58:23.365Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,12 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>21学年秋季学期首日教育</title>
+    <link href="http://example.com/2021/09/05/newpapername/"/>
+    <id>http://example.com/2021/09/05/newpapername/</id>
+    <published>2021-09-05T01:00:00.000Z</published>
+    <updated>2021-09-05T01:58:23.365Z</updated>
+    
+    <content type="html"><![CDATA[<p>hello world</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;hello world&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="怎么有学校首日教育讲体育啊" scheme="http://example.com/tags/%E6%80%8E%E4%B9%88%E6%9C%89%E5%AD%A6%E6%A0%A1%E9%A6%96%E6%97%A5%E6%95%99%E8%82%B2%E8%AE%B2%E4%BD%93%E8%82%B2%E5%95%8A/"/>
+    
+  </entry>
+  
+  <entry>
     <title>newpapername</title>
     <link href="http://example.com/2021/09/03/newpapername-1/"/>
     <id>http://example.com/2021/09/03/newpapername-1/</id>
     <published>2021-09-03T10:53:44.000Z</published>
-    <updated>2021-09-03T10:53:44.928Z</updated>
+    <updated>2021-09-05T01:57:08.437Z</updated>
     
+    <content type="html"><![CDATA[<p>111111</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;111111&lt;/p&gt;
+</summary>
+      
     
     
     
