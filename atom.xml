@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-09-05T01:58:23.365Z</updated>
+  <updated>2021-09-06T07:15:49.662Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,18 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>大三秋季第一天</title>
+    <link href="http://example.com/2021/09/06/newpapername-1/"/>
+    <id>http://example.com/2021/09/06/newpapername-1/</id>
+    <published>2021-09-06T10:53:44.000Z</published>
+    <updated>2021-09-06T07:15:49.662Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.操作系统老佛爷真牛逼</p><p>“作为大三的计算机同学，ubuntu都装不来，可以从学院11楼跳下去了”</p><p>“以前我不能说，现在男生穿的像小鲜肉一样就滚出我的课堂”</p><p>“要是你们觉得linux不好用，那是因为你们不配”</p><p>2.被骗了 计算机图形学怎么要考试</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1.操作系统老佛爷真牛逼&lt;/p&gt;
+&lt;p&gt;“作为大三的计算机同学，ubuntu都装不来，可以从学院11楼跳下去了”&lt;/p&gt;
+&lt;p&gt;“以前我不能说，现在男生穿的像小鲜肉一样就滚出我的课堂”&lt;/p&gt;
+&lt;p&gt;“要是你们觉得linux不好用，那是因为你们不配”&lt;/p&gt;
+&lt;p&gt;2.被骗</summary>
+      
+    
+    
+    
+    
+    <category term="我不想上课我不想上课我不想上课" scheme="http://example.com/tags/%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>21学年秋季学期首日教育</title>
     <link href="http://example.com/2021/09/05/newpapername/"/>
     <id>http://example.com/2021/09/05/newpapername/</id>
     <published>2021-09-05T01:00:00.000Z</published>
-    <updated>2021-09-05T01:58:23.365Z</updated>
+    <updated>2021-09-06T07:08:58.000Z</updated>
     
-    <content type="html"><![CDATA[<p>hello world</p>]]></content>
+    <content type="html"><![CDATA[<p>在上海大学领导的英明带领下，我们听了一整个早上的体育学院老师如何锻炼身体，以及进行了一手体型歧视，真好啊！还有一个CCF七篇一作的学长来尝试教会我如何不被顶会拒稿，我再次意识到自己是废物。真好啊！</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;hello world&lt;/p&gt;
+    <summary type="html">&lt;p&gt;在上海大学领导的英明带领下，我们听了一整个早上的体育学院老师如何锻炼身体，以及进行了一手体型歧视，真好啊！还有一个CCF七篇一作的学长来尝试教会我如何不被顶会拒稿，我再次意识到自己是废物。真好啊！&lt;/p&gt;
 </summary>
       
     
@@ -36,27 +62,6 @@
     
     
     <category term="怎么有学校首日教育讲体育啊" scheme="http://example.com/tags/%E6%80%8E%E4%B9%88%E6%9C%89%E5%AD%A6%E6%A0%A1%E9%A6%96%E6%97%A5%E6%95%99%E8%82%B2%E8%AE%B2%E4%BD%93%E8%82%B2%E5%95%8A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>newpapername</title>
-    <link href="http://example.com/2021/09/03/newpapername-1/"/>
-    <id>http://example.com/2021/09/03/newpapername-1/</id>
-    <published>2021-09-03T10:53:44.000Z</published>
-    <updated>2021-09-05T01:57:08.437Z</updated>
-    
-    <content type="html"><![CDATA[<p>111111</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;111111&lt;/p&gt;
-</summary>
-      
-    
-    
-    
     
   </entry>
   
