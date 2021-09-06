@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-09-06T07:15:49.662Z</updated>
+  <updated>2021-09-06T07:18:01.101Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2021/09/06/newpapername-1/"/>
     <id>http://example.com/2021/09/06/newpapername-1/</id>
     <published>2021-09-06T10:53:44.000Z</published>
-    <updated>2021-09-06T07:15:49.662Z</updated>
+    <updated>2021-09-06T07:18:01.101Z</updated>
     
     <content type="html"><![CDATA[<p>1.操作系统老佛爷真牛逼</p><p>“作为大三的计算机同学，ubuntu都装不来，可以从学院11楼跳下去了”</p><p>“以前我不能说，现在男生穿的像小鲜肉一样就滚出我的课堂”</p><p>“要是你们觉得linux不好用，那是因为你们不配”</p><p>2.被骗了 计算机图形学怎么要考试</p>]]></content>
     
@@ -47,7 +47,7 @@
     <link href="http://example.com/2021/09/05/newpapername/"/>
     <id>http://example.com/2021/09/05/newpapername/</id>
     <published>2021-09-05T01:00:00.000Z</published>
-    <updated>2021-09-06T07:08:58.000Z</updated>
+    <updated>2021-09-06T07:17:52.208Z</updated>
     
     <content type="html"><![CDATA[<p>在上海大学领导的英明带领下，我们听了一整个早上的体育学院老师如何锻炼身体，以及进行了一手体型歧视，真好啊！还有一个CCF七篇一作的学长来尝试教会我如何不被顶会拒稿，我再次意识到自己是废物。真好啊！</p>]]></content>
     
