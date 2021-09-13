@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-09-11T12:16:38.724Z</updated>
+  <updated>2021-09-13T02:03:45.082Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>计算机网络 数据链路层</title>
+    <link href="http://example.com/2021/09/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <id>http://example.com/2021/09/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</id>
+    <published>2021-09-13T00:58:07.000Z</published>
+    <updated>2021-09-13T02:03:45.082Z</updated>
+    
+    <content type="html"><![CDATA[<p>主机五层：应用 运输 网络 链路 物理</p><p>路由器三层：网络 链路 物理</p><p>链路是一条无源的点到点的物理线路段，中间没有任何其他交换节点</p><p>数据链路：除了物理线路之外，必须有通信协议来控制数据的传输。把这些协议的硬件和软件加在链路上，就构成了数据链路</p><p>常用方法：数据链路层的工作由适配器（网卡）实现协议的硬件和软件</p><p>3.1封装帧</p><p>在一段数据的前后分别添加首部和尾部</p><p>数据链路层的帧长是首部+尾部+MTU</p><p>MTU：帧的数据部分的帧长</p><p>利用控制字符封装： 开始符：SOH（START OF HEAD） 结束符：EOT （END OF TEXT）</p><p>3.2透明传输</p><p>当数据中出现控制字符时 在SOH和EOT前加入转义字符“ESC”（其编码为1B）</p><p>如果转义字符也出现在数据当中，在其之前再插入一个转义字符，当连续接受两个转义字符时，删除前面的一个</p><p>3.3差错检测</p><p>传输错误的比特占总比特的比例为误码率BER（Bit Error Rate）</p><p>误码率和信噪比有很大关系                                                                                                                                                                                                                                                                                                                                 </p><p>·</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;主机五层：应用 运输 网络 链路 物理&lt;/p&gt;
+&lt;p&gt;路由器三层：网络 链路 物理&lt;/p&gt;
+&lt;p&gt;链路是一条无源的点到点的物理线路段，中间没有任何其他交换节点&lt;/p&gt;
+&lt;p&gt;数据链路：除了物理线路之外，必须有通信协议来控制数据的传输。把这些协议的硬件和软件加在链路上，就构成</summary>
+      
+    
+    
+    
+    
+    <category term="勉强记个笔记吧" scheme="http://example.com/tags/%E5%8B%89%E5%BC%BA%E8%AE%B0%E4%B8%AA%E7%AC%94%E8%AE%B0%E5%90%A7/"/>
+    
+  </entry>
   
   <entry>
     <title>操作系统</title>

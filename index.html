@@ -66,6 +66,61 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-计算机网络" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/09/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="article-date">
+  <time datetime="2021-09-13T00:58:07.000Z" itemprop="datePublished">2021-09-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/09/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络 数据链路层</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>主机五层：应用 运输 网络 链路 物理</p>
+<p>路由器三层：网络 链路 物理</p>
+<p>链路是一条无源的点到点的物理线路段，中间没有任何其他交换节点</p>
+<p>数据链路：除了物理线路之外，必须有通信协议来控制数据的传输。把这些协议的硬件和软件加在链路上，就构成了数据链路</p>
+<p>常用方法：数据链路层的工作由适配器（网卡）实现协议的硬件和软件</p>
+<p>3.1封装帧</p>
+<p>在一段数据的前后分别添加首部和尾部</p>
+<p>数据链路层的帧长是首部+尾部+MTU</p>
+<p>MTU：帧的数据部分的帧长</p>
+<p>利用控制字符封装： 开始符：SOH（START OF HEAD） 结束符：EOT （END OF TEXT）</p>
+<p>3.2透明传输</p>
+<p>当数据中出现控制字符时 在SOH和EOT前加入转义字符“ESC”（其编码为1B）</p>
+<p>如果转义字符也出现在数据当中，在其之前再插入一个转义字符，当连续接受两个转义字符时，删除前面的一个</p>
+<p>3.3差错检测</p>
+<p>传输错误的比特占总比特的比例为误码率BER（Bit Error Rate）</p>
+<p>误码率和信噪比有很大关系                                                                                                                                                                                                                                                                                                                                 </p>
+<p>·</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" data-id="ckti05zmk000h9cvxaj9l4e93" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8B%89%E5%BC%BA%E8%AE%B0%E4%B8%AA%E7%AC%94%E8%AE%B0%E5%90%A7/" rel="tag">勉强记个笔记吧</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-操作系统" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2021/09/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="article-date">
@@ -102,7 +157,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" data-id="cktgs0v4q000emcvxfvtg31sv" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" data-id="ckti05zmg00079cvx4izhe7v5" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%B0%E4%B8%AA%E7%AC%94%E8%AE%B0%E5%8F%AD%EF%BC%88%E8%80%81%E4%BD%9B%E7%88%B7%E4%BB%8A%E5%A4%A9%E5%90%90%E6%A7%BD%E4%BA%86%E4%B9%A6%E7%9A%84%E4%BD%9C%E8%80%85%E6%98%AF%E5%AD%A6%E6%B8%A3%EF%BC%89/" rel="tag">记个笔记叭（老佛爷今天吐槽了书的作者是学渣）</a></li></ul>
@@ -145,7 +200,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/09/math/" data-id="cktgs0v4i0004mcvxbo3r8h1f" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/09/math/" data-id="ckti05zmc00039cvxctho8gaa" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9C%89%E4%BA%BA%E5%9C%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E7%9A%84%E8%AF%BE%E4%B8%8A%E5%BE%88%E6%97%A0%E8%81%8A%E6%95%85%E8%80%8C%E5%BC%80%E5%A7%8B%E7%94%BB%E7%94%9C%E7%94%9C%E5%9C%88/" rel="tag">有人在计算机图形学的课上很无聊故而开始画甜甜圈</a></li></ul>
@@ -185,7 +240,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/08/Ooowee/" data-id="cktgs0v4c0000mcvx4qxz7838" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/08/Ooowee/" data-id="ckti05zmb00029cvx025gcdy7" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mr-Poopy-Butthole/" rel="tag">Mr. Poopy Butthole</a></li></ul>
@@ -228,7 +283,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/06/newpapername-1/" data-id="cktgs0v4j0005mcvx4p49bmhr" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/06/newpapername-1/" data-id="ckti05zmf00069cvxghzy3jrz" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE/" rel="tag">我不想上课我不想上课我不想上课</a></li></ul>
@@ -267,7 +322,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/05/newpapername/" data-id="cktgs0v4k0006mcvx9s59baid" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/05/newpapername/" data-id="ckti05zme00059cvx22xs2667" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%80%8E%E4%B9%88%E6%9C%89%E5%AD%A6%E6%A0%A1%E9%A6%96%E6%97%A5%E6%95%99%E8%82%B2%E8%AE%B2%E4%BD%93%E8%82%B2%E5%95%8A/" rel="tag">怎么有学校首日教育讲体育啊</a></li></ul>
@@ -318,7 +373,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/03/hello-world/" data-id="cktgs0v4g0002mcvxhykqbr2d" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/03/hello-world/" data-id="ckti05zm900019cvxbhdj3qbb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -341,7 +396,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mr-Poopy-Butthole/" rel="tag">Mr. Poopy Butthole</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%80%8E%E4%B9%88%E6%9C%89%E5%AD%A6%E6%A0%A1%E9%A6%96%E6%97%A5%E6%95%99%E8%82%B2%E8%AE%B2%E4%BD%93%E8%82%B2%E5%95%8A/" rel="tag">怎么有学校首日教育讲体育啊</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE/" rel="tag">我不想上课我不想上课我不想上课</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%89%E4%BA%BA%E5%9C%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E7%9A%84%E8%AF%BE%E4%B8%8A%E5%BE%88%E6%97%A0%E8%81%8A%E6%95%85%E8%80%8C%E5%BC%80%E5%A7%8B%E7%94%BB%E7%94%9C%E7%94%9C%E5%9C%88/" rel="tag">有人在计算机图形学的课上很无聊故而开始画甜甜圈</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%B0%E4%B8%AA%E7%AC%94%E8%AE%B0%E5%8F%AD%EF%BC%88%E8%80%81%E4%BD%9B%E7%88%B7%E4%BB%8A%E5%A4%A9%E5%90%90%E6%A7%BD%E4%BA%86%E4%B9%A6%E7%9A%84%E4%BD%9C%E8%80%85%E6%98%AF%E5%AD%A6%E6%B8%A3%EF%BC%89/" rel="tag">记个笔记叭（老佛爷今天吐槽了书的作者是学渣）</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mr-Poopy-Butthole/" rel="tag">Mr. Poopy Butthole</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8B%89%E5%BC%BA%E8%AE%B0%E4%B8%AA%E7%AC%94%E8%AE%B0%E5%90%A7/" rel="tag">勉强记个笔记吧</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%80%8E%E4%B9%88%E6%9C%89%E5%AD%A6%E6%A0%A1%E9%A6%96%E6%97%A5%E6%95%99%E8%82%B2%E8%AE%B2%E4%BD%93%E8%82%B2%E5%95%8A/" rel="tag">怎么有学校首日教育讲体育啊</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE/" rel="tag">我不想上课我不想上课我不想上课</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%89%E4%BA%BA%E5%9C%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E7%9A%84%E8%AF%BE%E4%B8%8A%E5%BE%88%E6%97%A0%E8%81%8A%E6%95%85%E8%80%8C%E5%BC%80%E5%A7%8B%E7%94%BB%E7%94%9C%E7%94%9C%E5%9C%88/" rel="tag">有人在计算机图形学的课上很无聊故而开始画甜甜圈</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%B0%E4%B8%AA%E7%AC%94%E8%AE%B0%E5%8F%AD%EF%BC%88%E8%80%81%E4%BD%9B%E7%88%B7%E4%BB%8A%E5%A4%A9%E5%90%90%E6%A7%BD%E4%BA%86%E4%B9%A6%E7%9A%84%E4%BD%9C%E8%80%85%E6%98%AF%E5%AD%A6%E6%B8%A3%EF%BC%89/" rel="tag">记个笔记叭（老佛爷今天吐槽了书的作者是学渣）</a></li></ul>
     </div>
   </div>
 
@@ -351,7 +406,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Mr-Poopy-Butthole/" style="font-size: 10px;">Mr. Poopy Butthole</a> <a href="/tags/%E6%80%8E%E4%B9%88%E6%9C%89%E5%AD%A6%E6%A0%A1%E9%A6%96%E6%97%A5%E6%95%99%E8%82%B2%E8%AE%B2%E4%BD%93%E8%82%B2%E5%95%8A/" style="font-size: 10px;">怎么有学校首日教育讲体育啊</a> <a href="/tags/%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE/" style="font-size: 10px;">我不想上课我不想上课我不想上课</a> <a href="/tags/%E6%9C%89%E4%BA%BA%E5%9C%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E7%9A%84%E8%AF%BE%E4%B8%8A%E5%BE%88%E6%97%A0%E8%81%8A%E6%95%85%E8%80%8C%E5%BC%80%E5%A7%8B%E7%94%BB%E7%94%9C%E7%94%9C%E5%9C%88/" style="font-size: 10px;">有人在计算机图形学的课上很无聊故而开始画甜甜圈</a> <a href="/tags/%E8%AE%B0%E4%B8%AA%E7%AC%94%E8%AE%B0%E5%8F%AD%EF%BC%88%E8%80%81%E4%BD%9B%E7%88%B7%E4%BB%8A%E5%A4%A9%E5%90%90%E6%A7%BD%E4%BA%86%E4%B9%A6%E7%9A%84%E4%BD%9C%E8%80%85%E6%98%AF%E5%AD%A6%E6%B8%A3%EF%BC%89/" style="font-size: 10px;">记个笔记叭（老佛爷今天吐槽了书的作者是学渣）</a>
+      <a href="/tags/Mr-Poopy-Butthole/" style="font-size: 10px;">Mr. Poopy Butthole</a> <a href="/tags/%E5%8B%89%E5%BC%BA%E8%AE%B0%E4%B8%AA%E7%AC%94%E8%AE%B0%E5%90%A7/" style="font-size: 10px;">勉强记个笔记吧</a> <a href="/tags/%E6%80%8E%E4%B9%88%E6%9C%89%E5%AD%A6%E6%A0%A1%E9%A6%96%E6%97%A5%E6%95%99%E8%82%B2%E8%AE%B2%E4%BD%93%E8%82%B2%E5%95%8A/" style="font-size: 10px;">怎么有学校首日教育讲体育啊</a> <a href="/tags/%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE/" style="font-size: 10px;">我不想上课我不想上课我不想上课</a> <a href="/tags/%E6%9C%89%E4%BA%BA%E5%9C%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E7%9A%84%E8%AF%BE%E4%B8%8A%E5%BE%88%E6%97%A0%E8%81%8A%E6%95%85%E8%80%8C%E5%BC%80%E5%A7%8B%E7%94%BB%E7%94%9C%E7%94%9C%E5%9C%88/" style="font-size: 10px;">有人在计算机图形学的课上很无聊故而开始画甜甜圈</a> <a href="/tags/%E8%AE%B0%E4%B8%AA%E7%AC%94%E8%AE%B0%E5%8F%AD%EF%BC%88%E8%80%81%E4%BD%9B%E7%88%B7%E4%BB%8A%E5%A4%A9%E5%90%90%E6%A7%BD%E4%BA%86%E4%B9%A6%E7%9A%84%E4%BD%9C%E8%80%85%E6%98%AF%E5%AD%A6%E6%B8%A3%EF%BC%89/" style="font-size: 10px;">记个笔记叭（老佛爷今天吐槽了书的作者是学渣）</a>
     </div>
   </div>
 
@@ -373,6 +428,10 @@
       <ul>
         
           <li>
+            <a href="/2021/09/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络 数据链路层</a>
+          </li>
+        
+          <li>
             <a href="/2021/09/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a>
           </li>
         
@@ -386,10 +445,6 @@
         
           <li>
             <a href="/2021/09/06/newpapername-1/">大三秋季第一天</a>
-          </li>
-        
-          <li>
-            <a href="/2021/09/05/newpapername/">21学年秋季学期首日教育</a>
           </li>
         
       </ul>
