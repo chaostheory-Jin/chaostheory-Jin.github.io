@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-29T03:15:13.948Z</updated>
+  <updated>2021-11-30T08:24:28.025Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,13 +21,25 @@
     <link href="http://example.com/2021/11/29/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%B8%80%E5%91%A8/"/>
     <id>http://example.com/2021/11/29/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%B8%80%E5%91%A8/</id>
     <published>2021-11-29T02:07:24.000Z</published>
-    <updated>2021-11-29T03:15:13.948Z</updated>
+    <updated>2021-11-30T08:24:28.025Z</updated>
+    
+    <content type="html"><![CDATA[<p>数据库里不做排序的，用的是索引提高查询速度 （因为排序会造成数据冗余）</p><p>CREATE INDEX &lt;索引名&gt;</p><p>建立school数据库</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;数据库里不做排序的，用的是索引提高查询速度 （因为排序会造成数据冗余）&lt;/p&gt;
+&lt;p&gt;CREATE INDEX &amp;lt;索引名&amp;gt;&lt;/p&gt;
+&lt;p&gt;建立school数据库&lt;/p&gt;
+</summary>
+      
     
     
     
     
+    <category term="数据库原理" scheme="http://example.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/"/>
     
-    <category term="听宋老师上课还怪紧张的" scheme="http://example.com/tags/%E5%90%AC%E5%AE%8B%E8%80%81%E5%B8%88%E4%B8%8A%E8%AF%BE%E8%BF%98%E6%80%AA%E7%B4%A7%E5%BC%A0%E7%9A%84/"/>
+    <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
     
   </entry>
   
@@ -36,7 +48,7 @@
     <link href="http://example.com/2021/09/24/emo/"/>
     <id>http://example.com/2021/09/24/emo/</id>
     <published>2021-09-24T03:07:41.000Z</published>
-    <updated>2021-09-24T03:08:33.299Z</updated>
+    <updated>2021-11-30T08:20:29.728Z</updated>
     
     <content type="html"><![CDATA[<p>这个故事叫：</p><p>哭也哭了 骂也骂了 觉也睡了</p><p>该干活了</p>]]></content>
     
@@ -51,6 +63,12 @@
     
     
     
+    <category term="金泓宇的碎碎念" scheme="http://example.com/categories/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    
+    <category term="金泓宇的碎碎念" scheme="http://example.com/tags/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    <category term="emo" scheme="http://example.com/tags/emo/"/>
     
   </entry>
   
@@ -59,7 +77,7 @@
     <link href="http://example.com/2021/09/16/%E8%AE%A1%E7%BD%91%E5%BA%94%E7%94%A8%E5%B1%82/"/>
     <id>http://example.com/2021/09/16/%E8%AE%A1%E7%BD%91%E5%BA%94%E7%94%A8%E5%B1%82/</id>
     <published>2021-09-16T11:52:48.000Z</published>
-    <updated>2021-09-16T12:51:26.299Z</updated>
+    <updated>2021-11-30T08:24:41.311Z</updated>
     
     <content type="html"><![CDATA[<p>应用层 &lt;—-&gt; 数据传输层</p><p>数据传输层提供 socket api</p><p>网络应用的体系结构：</p><p>客户端——服务器模式（C/S）</p><p>服务器：持续运行 相应资源 软件 硬件数据资源都在服务器上</p><p>客户端：可以有动态地址 请求资源</p><p>问题：可扩展性差 架构随着用户的增加 达到阈值时 性能急剧下降</p><p>​            可靠性差 需求服务器持续运行</p><p>对等体 (P2P)</p><p>平滑扩展 几乎没有持续运行的服务器</p><p>节点提供的服务能力仅在其上线时提供</p><p>混合体(C/S &amp; P2P)</p><p>Napster  QQ </p><p>双方的通信是P2P 注册是C/S</p><p>进程通信</p><p>问题：标识自己的地址 唯一的地址 别人能定位到</p><p>​            使用传输层的api</p><p>寻址：在哪个主机ip 是TCP/UDP 在哪个端口</p><p>telnet: 23 web: 80 ftp: 21 </p><p>应用进程间的通信可以由两个端节点表示</p><p>层间接口携带的信息：谁发的 发给谁 发了什么</p><p>端口号(port) ip是主机的标识 ip上有很多的应用进程</p><p>socket：使得通信的信息量变少 便于管理</p>]]></content>
     
@@ -76,6 +94,12 @@
     
     
     
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
     
   </entry>
   
@@ -84,7 +108,7 @@
     <link href="http://example.com/2021/09/13/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%BA%8C%E5%91%A8/"/>
     <id>http://example.com/2021/09/13/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%BA%8C%E5%91%A8/</id>
     <published>2021-09-13T02:05:56.000Z</published>
-    <updated>2021-09-16T11:04:50.751Z</updated>
+    <updated>2021-11-30T08:25:05.867Z</updated>
     
     <content type="html"><![CDATA[<p>lfy：不仅是有的同学 很多教计算机的老师 张口就是乱说</p><p>​        中国人写书都是很功利的目的 所以现在写的书都很差</p><p>​        以后上课关起门来 我叫自己朕 你们叫我陛下</p><p>lfy说要考的：硬件做的是指令系统 用的是指令集</p><p>​                        什么是函数 什么是系统空间调用</p><p>1.3.2共享</p><p>lfy：你们一起在教室上课，就是共享了我（？）</p><p>共享会有安全性问题</p><p>1.3.3虚拟</p><p>时分复用技术——虚拟处理机技术——虚拟设备技术</p><p>操作系统本身就是虚拟机 是一个资源管理器 </p><p>eg. 硬盘—文件</p><p>​      cpu—进程&amp;&amp;线程</p><p>1.3.4异步 (Asynchronism)</p><p>我们写的程序是顺序执行的 但是计算机内的许多程序是并发运行的</p><p>各个程序跑的有快有慢 </p><p>1.4 操作系统的主要功能</p><p>1.4.1处理器管理功能/进程管理功能 （1.控制进程 2.进程同步 3.进程通信 4.调度）</p><p>​          计算机层次：</p><p>​        APP APP APP</p><p>​    —————— （房管指令）</p><p>​                OS</p><p>​    —————— （指令集）</p><p>​               硬件 </p><p>1.4.2存储器管理功能</p><p>1.内存分配 内存操作系统给出去了也可以收回来</p><p>（1）给程序分配内存空间（2）提高存储器利用率（3）允许正在运行的程序申请附加的内存空间</p><p>2.内存保护</p><p>3.地址映射 将地址空间中逻辑地址转换为内存空间中对应的物理地址</p><p>4.内存扩充 </p><p>1.4.3设备管理功能</p><p>（1）完成I/O请求 完成指定的I/O操作</p>]]></content>
     
@@ -99,8 +123,12 @@
     
     
     
+    <category term="操作系统" scheme="http://example.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
-    <category term="每周究极乐子" scheme="http://example.com/tags/%E6%AF%8F%E5%91%A8%E7%A9%B6%E6%9E%81%E4%B9%90%E5%AD%90/"/>
+    
+    <category term="老佛爷的操作系统" scheme="http://example.com/tags/%E8%80%81%E4%BD%9B%E7%88%B7%E7%9A%84%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
     
   </entry>
   
@@ -109,7 +137,7 @@
     <link href="http://example.com/2021/09/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     <id>http://example.com/2021/09/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</id>
     <published>2021-09-13T00:58:07.000Z</published>
-    <updated>2021-09-18T07:20:19.955Z</updated>
+    <updated>2021-11-30T08:24:54.193Z</updated>
     
     <content type="html"><![CDATA[<p>主机五层：应用 运输 网络 链路 物理</p><p>路由器三层：网络 链路 物理</p><p>链路是一条无源的点到点的物理线路段，中间没有任何其他交换节点</p><p>数据链路：除了物理线路之外，必须有通信协议来控制数据的传输。把这些协议的硬件和软件加在链路上，就构成了数据链路</p><p>常用方法：数据链路层的工作由适配器（网卡）实现协议的硬件和软件</p><p>3.1封装帧</p><p>在一段数据的前后分别添加首部和尾部</p><p>数据链路层的帧长是首部+尾部+MTU</p><p>MTU：帧的数据部分的帧长</p><p>利用控制字符封装： 开始符：SOH（START OF HEAD） 结束符：EOT （END OF TEXT）</p><p>3.2透明传输</p><p>当数据中出现控制字符时 在SOH和EOT前加入转义字符“ESC”（其编码为1B）</p><p>如果转义字符也出现在数据当中，在其之前再插入一个转义字符，当连续接受两个转义字符时，删除前面的一个</p><p>3.3差错检测</p><p>传输错误的比特占总比特的比例为误码率BER（Bit Error Rate）</p><p>误码率和信噪比有很大关系                                                                                                                                                                                                                                                                                                                                 </p><p>汉明距离：</p><p>如果要检测e个差错，则编码集的汉明距离至少为e+1</p><p>如果要纠正t个差错，则编码集的汉明距离至少为2t+1</p><p>如果要检测e个差错，同时纠正t个差错，则编码集的汉明距离至少为e+t+1</p><p>eg.纠错 000000 000111 111000 111111 汉明距离=3</p><p>​                010111 恢复为 000111 错一位 </p><p>3.4差错控制编码</p><p>奇偶检验码：在数据码后附加一个校验位，使构成的码组中1的个数为奇数，或偶数</p><p>0100101（0）奇校验 </p><p>0100101（1）偶校验</p><p>奇偶检验码只能检测出奇数个错误，无法检测出偶数个错误，但是实践简单</p><p>使用水平/二维奇偶检验</p><p>3.5数据的可靠传输和流量控制</p><p>实用的停止等待协议：</p><p>在实际的数据传输过程中，传输差错是不可避免的</p><p>传输差错导致接收的数据帧差错，接收方要求发送方重发数据帧</p><p>(a)正常情况 A DATA0 -&gt; B -&gt; ACK -&gt; A  -&gt; DATA1 -&gt;B -&gt;ACK</p><p>(b)数据帧错误 A DATA0 -&gt; B -&gt;(出错) NAK -&gt; A  -&gt; DATA0 -&gt;B -&gt;ACK</p><p>(c)数据帧丢失 A DATA0 -&gt; B -&gt;(丢失) (重传) A  -&gt; DATA0 -&gt;B -&gt;ACK</p><p>(d)确认帧丢失 A DATA0 -&gt; B -&gt; ACK（丢失）  A  -&gt; DATA0 -&gt;B -&gt;ACK（要是再要就从鸿福了）</p><p>所以需要解决接收方的重传问题</p><p>超时重传技术：</p><p>结点A发送完一个数据帧是，就启动一个超时计时器，此计时器又称定时器</p><p>重复帧问题：（应答帧丢失导致）</p><p>每个数据帧带上不同的发送序号，每发送一个新的数据帧就把序号加1</p><p>帧的编号问题：任何的编号系统的序号所占用的比特数都是有限的，因此在一段事件后，发送的序号就会重复</p>]]></content>
     
@@ -124,8 +152,12 @@
     
     
     
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="勉强记个笔记吧" scheme="http://example.com/tags/%E5%8B%89%E5%BC%BA%E8%AE%B0%E4%B8%AA%E7%AC%94%E8%AE%B0%E5%90%A7/"/>
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
     
   </entry>
   
@@ -134,7 +166,7 @@
     <link href="http://example.com/2021/09/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     <id>http://example.com/2021/09/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</id>
     <published>2021-09-09T07:07:07.000Z</published>
-    <updated>2021-09-11T12:16:38.724Z</updated>
+    <updated>2021-11-30T08:25:18.970Z</updated>
     
     <content type="html"><![CDATA[<p>老佛爷吐槽：中国人说话一直没什么逻辑</p><p>老佛爷技能：把粉笔往地上一丢 粉笔就断了</p><p>1.在核心态下运行的软件</p><p>interface 接口 操作系统是一个硬件上的软件平台 在操作系统上进而运行application</p><p>文件是操作系统虚拟出来的概念 离开了操作系统就没有这个概念</p><p>1.2.3多道批处理系统</p><p>中断是做切换的trigger</p><p>1.3.1并发</p><p>并行是好几个事情一起发生</p><p>并发是好几个事情在同一个时间</p>]]></content>
     
@@ -150,8 +182,12 @@
     
     
     
+    <category term="操作系统" scheme="http://example.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
-    <category term="记个笔记叭（老佛爷今天吐槽了书的作者是学渣）" scheme="http://example.com/tags/%E8%AE%B0%E4%B8%AA%E7%AC%94%E8%AE%B0%E5%8F%AD%EF%BC%88%E8%80%81%E4%BD%9B%E7%88%B7%E4%BB%8A%E5%A4%A9%E5%90%90%E6%A7%BD%E4%BA%86%E4%B9%A6%E7%9A%84%E4%BD%9C%E8%80%85%E6%98%AF%E5%AD%A6%E6%B8%A3%EF%BC%89/"/>
+    
+    <category term="老佛爷的操作系统" scheme="http://example.com/tags/%E8%80%81%E4%BD%9B%E7%88%B7%E7%9A%84%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
     
   </entry>
   
@@ -160,7 +196,7 @@
     <link href="http://example.com/2021/09/09/math/"/>
     <id>http://example.com/2021/09/09/math/</id>
     <published>2021-09-08T23:57:53.000Z</published>
-    <updated>2021-09-09T00:02:23.210Z</updated>
+    <updated>2021-11-30T08:20:23.167Z</updated>
     
     <content type="html"><![CDATA[<p>This is just a DONUT, which generates a ‘code’ donut on screen. </p><p>Here authors fantastic code:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">            k;double sin()</span><br><span class="line">         ,cos();main()&#123;float A=</span><br><span class="line">       0,B=0,i,j,z[1760];char b[</span><br><span class="line">     1760];printf(&quot;\x1b[2J&quot;);for(;;</span><br><span class="line">  )&#123;memset(b,32,1760);memset(z,0,7040)</span><br><span class="line">  ;for(j=0;6.28&gt;j;j+=0.07)for(i=0;6.28</span><br><span class="line"> &gt;i;i+=0.02)&#123;float c=sin(i),d=cos(j),e=</span><br><span class="line"> sin(A),f=sin(j),g=cos(A),h=d+2,D=1/(c*</span><br><span class="line"> h*e+f*g+5),l=cos      (i),m=cos(B),n=s\</span><br><span class="line">in(B),t=c*h*g-f*        e;int x=40+30*D*</span><br><span class="line">(l*h*m-t*n),y=            12+15*D*(l*h*n</span><br><span class="line">+t*m),o=x+80*y,          N=8*((f*e-c*d*g</span><br><span class="line"> )*m-c*d*e-f*g-l        *d*n);if(22&gt;y&amp;&amp;</span><br><span class="line"> y&gt;0&amp;&amp;x&gt;0&amp;&amp;80&gt;x&amp;&amp;D&gt;z[o])&#123;z[o]=D;;;b[o]=</span><br><span class="line"> &quot;.,-~:;=!*#$@&quot;[N&gt;0?N:0];&#125;&#125;/*#****!!-*/</span><br><span class="line">  printf(&quot;\x1b[H&quot;);for(k=0;1761&gt;k;k++)</span><br><span class="line">   putchar(k%80?b[k]:10);A+=0.04;B+=</span><br><span class="line">     0.02;&#125;&#125;/*****####*******!!=;:~</span><br><span class="line">       ~::==!!!**********!!!==::-</span><br><span class="line">         .,~~;;;========;;;:~-.</span><br><span class="line">             ..,--------,*/</span><br></pre></td></tr></table></figure><p>origin work:<a href="https://www.a1k0n.net/2011/07/20/donut-math.html">https://www.a1k0n.net/2011/07/20/donut-math.html</a></p>]]></content>
     
@@ -174,8 +210,10 @@
     
     
     
+    <category term="做着玩呢" scheme="http://example.com/categories/%E5%81%9A%E7%9D%80%E7%8E%A9%E5%91%A2/"/>
     
-    <category term="有人在计算机图形学的课上很无聊故而开始画甜甜圈" scheme="http://example.com/tags/%E6%9C%89%E4%BA%BA%E5%9C%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E7%9A%84%E8%AF%BE%E4%B8%8A%E5%BE%88%E6%97%A0%E8%81%8A%E6%95%85%E8%80%8C%E5%BC%80%E5%A7%8B%E7%94%BB%E7%94%9C%E7%94%9C%E5%9C%88/"/>
+    
+    <category term="做着玩呢" scheme="http://example.com/tags/%E5%81%9A%E7%9D%80%E7%8E%A9%E5%91%A2/"/>
     
   </entry>
   
@@ -184,7 +222,7 @@
     <link href="http://example.com/2021/09/08/Ooowee/"/>
     <id>http://example.com/2021/09/08/Ooowee/</id>
     <published>2021-09-08T00:16:06.000Z</published>
-    <updated>2021-09-08T00:37:25.708Z</updated>
+    <updated>2021-11-30T08:22:44.001Z</updated>
     
     <content type="html"><![CDATA[<p>But I guess things went downhill from there, started isolating myself from her. Used to tell her everything I was felling, but then I guess I stopped, ‘cause I wanted her to love who she thought I was, not who I felt myself becoming. Ever think about how horrified the people we love would be,   if they found out who we truly are?</p><p>So we just dig ourselves deeper into our lies every day, ultimately hurting the only people brave enough to love us. Wish I didn’t do that. Wish I was brave enough to love them back. I didn’t know, maybe you should try it. We don’t have as much time as we think. Ooowee.</p>]]></content>
     
@@ -196,8 +234,12 @@
     
     
     
+    <category term="金泓宇的碎碎念" scheme="http://example.com/categories/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
-    <category term="Mr. Poopy Butthole" scheme="http://example.com/tags/Mr-Poopy-Butthole/"/>
+    
+    <category term="金泓宇的碎碎念" scheme="http://example.com/tags/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    <category term="emo" scheme="http://example.com/tags/emo/"/>
     
   </entry>
   
@@ -206,7 +248,7 @@
     <link href="http://example.com/2021/09/06/newpapername-1/"/>
     <id>http://example.com/2021/09/06/newpapername-1/</id>
     <published>2021-09-06T10:53:44.000Z</published>
-    <updated>2021-09-06T07:18:01.101Z</updated>
+    <updated>2021-11-30T08:22:35.385Z</updated>
     
     <content type="html"><![CDATA[<p>1.操作系统老佛爷真牛逼</p><p>“作为大三的计算机同学，ubuntu都装不来，可以从学院11楼跳下去了”</p><p>“以前我不能说，现在男生穿的像小鲜肉一样就滚出我的课堂”</p><p>“要是你们觉得linux不好用，那是因为你们不配”</p><p>2.被骗了 计算机图形学怎么要考试</p>]]></content>
     
@@ -222,8 +264,12 @@
     
     
     
+    <category term="金泓宇的碎碎念" scheme="http://example.com/categories/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
-    <category term="我不想上课我不想上课我不想上课" scheme="http://example.com/tags/%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE%E6%88%91%E4%B8%8D%E6%83%B3%E4%B8%8A%E8%AF%BE/"/>
+    
+    <category term="金泓宇的碎碎念" scheme="http://example.com/tags/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    <category term="上海大学" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6/"/>
     
   </entry>
   
@@ -232,7 +278,7 @@
     <link href="http://example.com/2021/09/05/newpapername/"/>
     <id>http://example.com/2021/09/05/newpapername/</id>
     <published>2021-09-05T01:00:00.000Z</published>
-    <updated>2021-09-06T07:17:52.208Z</updated>
+    <updated>2021-11-30T08:22:23.052Z</updated>
     
     <content type="html"><![CDATA[<p>在上海大学领导的英明带领下，我们听了一整个早上的体育学院老师如何锻炼身体，以及进行了一手体型歧视，真好啊！还有一个CCF七篇一作的学长来尝试教会我如何不被顶会拒稿，我再次意识到自己是废物。真好啊！</p>]]></content>
     
@@ -245,28 +291,12 @@
     
     
     
-    
-    <category term="怎么有学校首日教育讲体育啊" scheme="http://example.com/tags/%E6%80%8E%E4%B9%88%E6%9C%89%E5%AD%A6%E6%A0%A1%E9%A6%96%E6%97%A5%E6%95%99%E8%82%B2%E8%AE%B2%E4%BD%93%E8%82%B2%E5%95%8A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2021/09/03/hello-world/"/>
-    <id>http://example.com/2021/09/03/hello-world/</id>
-    <published>2021-09-03T10:20:19.770Z</published>
-    <updated>1985-10-26T08:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <category term="金泓宇的碎碎念" scheme="http://example.com/categories/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
+    <category term="金泓宇的碎碎念" scheme="http://example.com/tags/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
-    
-    
+    <category term="上海大学" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6/"/>
     
   </entry>
   
