@@ -37,9 +37,9 @@
     
     
     
-    <category term="数据库原理" scheme="http://example.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/"/>
-    
     <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
+    
+    <category term="数据库原理" scheme="http://example.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/"/>
     
   </entry>
   
@@ -97,9 +97,9 @@
     <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
     
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
     <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
@@ -155,9 +155,9 @@
     <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
     
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
     <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
