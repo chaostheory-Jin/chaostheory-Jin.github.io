@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-12-01T16:14:29.834Z</updated>
+  <updated>2021-12-02T01:05:04.419Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>运筹与优化第一次实验</title>
+    <link href="http://example.com/2021/12/02/%E8%BF%90%E7%AD%B9%E4%B8%8E%E4%BC%98%E5%8C%96%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C/"/>
+    <id>http://example.com/2021/12/02/%E8%BF%90%E7%AD%B9%E4%B8%8E%E4%BC%98%E5%8C%96%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C/</id>
+    <published>2021-12-02T01:00:39.000Z</published>
+    <updated>2021-12-02T01:05:04.419Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>实验要求：</strong></p><p><strong>第一题</strong>：给定一个矩阵， 判断是否存在单位矩阵，并给出所在列</p><p>金泓宇的弱智思路：因为早起智商低下，所以就定义一个Mat单位阵，然后一点一段划过去判断能不能合上</p><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[yt]</span> = <span class="title">whethereye</span><span class="params">(A,m,n)</span></span></span><br><span class="line">yt=<span class="number">6.19</span>;</span><br><span class="line">M=<span class="built_in">min</span>(m,n);</span><br><span class="line">x=m-M+<span class="number">1</span>;y=n-M+<span class="number">1</span>;</span><br><span class="line">Mat=<span class="built_in">eye</span>(M,M);</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:x</span><br><span class="line">    subA=A(:,<span class="built_in">i</span>:<span class="built_in">i</span>+M<span class="number">-1</span>)</span><br><span class="line">    <span class="keyword">if</span>(subA==Mat)</span><br><span class="line">        yt=<span class="built_in">i</span>;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure><p><strong>第二题：</strong>高斯消元解方程</p><p>就正常按高斯消元的步骤就好，做的时候因为偷懒看了上学期的作业，行和列还给搞反了，看了半天怎么系数那一列做完都不动的</p><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span><span class="params">[x]</span>=<span class="title">gauss_elim</span><span class="params">(A,b)</span></span></span><br><span class="line">C=[A,b];</span><br><span class="line">[m,n]=<span class="built_in">size</span>(A);</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> =<span class="number">1</span>:n</span><br><span class="line">    C(<span class="built_in">i</span>,:) = C(<span class="built_in">i</span>,:)/C(<span class="built_in">i</span>,<span class="built_in">i</span>);</span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">j</span> =<span class="number">1</span>:n</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">i</span>~=<span class="built_in">j</span></span><br><span class="line">            C(<span class="built_in">j</span>,:)= C(<span class="built_in">j</span>,:)-C(<span class="built_in">i</span>,:).*C(<span class="built_in">j</span>,<span class="built_in">i</span>)</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">x=C(:,n+<span class="number">1</span>);</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;实验要求：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第一题&lt;/strong&gt;：给定一个矩阵， 判断是否存在单位矩阵，并给出所在列&lt;/p&gt;
+&lt;p&gt;金泓宇的弱智思路：因为早起智商低下，所以就定义一个Mat单位阵，然后一点一段划过去判断能不能合上&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="运筹与优化" scheme="http://example.com/categories/%E8%BF%90%E7%AD%B9%E4%B8%8E%E4%BC%98%E5%8C%96/"/>
+    
+    
+    <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
+    
+    <category term="运筹与优化" scheme="http://example.com/tags/%E8%BF%90%E7%AD%B9%E4%B8%8E%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
     <title>代码写得少 头发掉的多</title>
     <link href="http://example.com/2021/12/01/index/"/>
     <id>http://example.com/2021/12/01/index/</id>
     <published>2021-12-01T08:33:28.000Z</published>
-    <updated>2021-12-01T16:14:29.834Z</updated>
+    <updated>2021-12-02T01:09:53.905Z</updated>
     
     <content type="html"><![CDATA[<center><<某克莱登大学计算机科学博士、混乱的共产主义者、间歇性犬儒主义者>></center><p><img src="/img/dog.gif" alt="狗勾"></p>]]></content>
     
