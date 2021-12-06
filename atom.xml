@@ -75,9 +75,9 @@
     <link href="http://example.com/2021/12/01/index/"/>
     <id>http://example.com/2021/12/01/index/</id>
     <published>2021-12-01T08:33:28.000Z</published>
-    <updated>2021-12-02T01:09:53.905Z</updated>
+    <updated>2021-12-06T07:37:41.356Z</updated>
     
-    <content type="html"><![CDATA[<center>&lt;&lt;某克莱登大学计算机科学博士、混乱的共产主义者、间歇性犬儒主义者&gt;&gt;</center><figure><img src="/img/dog.gif" alt="" /><figcaption>狗勾</figcaption></figure>]]></content>
+    <content type="html"><![CDATA[<center>&lt;&lt;某克莱登大学计算机科学博士、混乱的共产主义者、间歇性犬儒主义者&gt;&gt;</center><p><img src="/img/dog.gif" /></p>]]></content>
     
     
       
@@ -85,8 +85,8 @@
     <summary type="html">&lt;center&gt;
 &amp;lt;&amp;lt;某克莱登大学计算机科学博士、混乱的共产主义者、间歇性犬儒主义者&amp;gt;&amp;gt;
 &lt;/center&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/img/dog.gif&quot; alt=&quot;&quot; /&gt;&lt;figcaption&gt;狗勾&lt;/figcaption&gt;</summary>
+&lt;p&gt;&lt;img src=&quot;/img/dog.gif&quot; /&gt;&lt;/p&gt;
+</summary>
       
     
     
