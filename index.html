@@ -89,7 +89,7 @@
         <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">10</span></a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">5</span></a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">14</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">15</span></a></li>
         <li class="menu-item menu-item-schedule"><a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a></li>
   </ul>
 </nav>
@@ -135,7 +135,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -250,9 +250,99 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <center><<某克莱登大学计算机科学博士、混乱的共产主义者、间歇性犬儒主义者>></center>
+          <center>
+&lt;&lt;某克莱登大学计算机科学博士、混乱的共产主义者、间歇性犬儒主义者&gt;&gt;
+</center>
+<figure>
+<img src="/img/dog.gif" alt="" /><figcaption>狗勾</figcaption>
+</figure>
 
-<p><img src="/img/dog.gif" alt="狗勾"></p>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/06/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%BA%8C%E5%91%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/cat.JPG">
+      <meta itemprop="name" content="Aston Jin">
+      <meta itemprop="description" content="某个人的个人主页罢了">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Aston-Jin">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/12/06/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%BA%8C%E5%91%A8/" class="post-title-link" itemprop="url">数据库第二周</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-12-06 10:01:18 / Modified: 11:30:02" itemprop="dateCreated datePublished" datetime="2021-12-06T10:01:18+08:00">2021-12-06</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h4 id="数据查询接上节课">数据查询（接上节课）：</h4>
+<p>带有谓词in的子查询：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s,sc <span class="keyword">WHERE</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">AND</span> cno<span class="operator">=</span><span class="string">&#x27;c2&#x27;</span>;</span><br><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> sno <span class="keyword">in</span> (<span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> cno<span class="operator">=</span><span class="string">&#x27;c2&#x27;</span>);<span class="operator">/</span><span class="operator">/</span>嵌套查询先做里面的<span class="keyword">SELECT</span></span><br></pre></td></tr></table></figure>
+<p>带有ANY和ALL的比较子查询：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> s.sno,sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> sec<span class="operator">=</span><span class="string">&#x27;男&#x27;</span> <span class="keyword">AND</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">GROUP</span> <span class="keyword">BY</span> s.sno <span class="keyword">HAVING</span> <span class="built_in">AVG</span>(grade)<span class="operator">&gt;</span><span class="keyword">ALL</span> (<span class="keyword">SELECT</span> grade <span class="keyword">FROM</span> s,sc <span class="keyword">WHERE</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">AND</span> sex<span class="operator">=</span><span class="string">&#x27;女&#x27;</span>)<span class="operator">/</span><span class="operator">/</span>找男同学，平均分大于所有女同学的分</span><br></pre></td></tr></table></figure>
+<p>带有存在量词EXISTS子查询：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> sno <span class="keyword">NOT</span> <span class="keyword">IN</span> (<span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> cno<span class="operator">=</span><span class="string">&#x27;c2&#x27;</span>);</span><br><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> cno<span class="operator">=</span><span class="string">&#x27;c2&#x27;</span> <span class="keyword">AND</span> s.sno<span class="operator">=</span>sc.sno);<span class="operator">/</span><span class="operator">/</span>存在量词是先做外面再做里面的</span><br></pre></td></tr></table></figure>
+<p><strong>SQL语言只有存在量词，不支持全称量词：</strong></p>
+<p>查询所有学生都选修的课程号和课程名==没有学生不选修的课程号和课程名 <span class="math display">\[
+(\forall x)P\equiv\neg(\exist x)\neg P
+\]</span></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> cno,cname <span class="keyword">FROM</span> c <span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> sno<span class="operator">=</span>s.sno <span class="keyword">AND</span> cno<span class="operator">=</span>c.cno))<span class="operator">/</span><span class="operator">/</span>不存在一个学生不选</span><br></pre></td></tr></table></figure>
+<p><strong>SQL不支持逻辑蕴含：</strong></p>
+<p>求选修学号为S3的学生所修全部课程的学生号码 <span class="math display">\[
+\begin{split} (\forall c_y)(p \rightarrow q) \\ \equiv \neg(\exist c_y)\neg(p \rightarrow q) \\ \equiv \neg(\exist c_y)\neg(\neg p \lor q) \\ \equiv \neg(\exist c_y)( p \land \neg q) \end{split}
+\]</span></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc x <span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXiSTS</span> (<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> sc y <span class="keyword">WHERE</span> sno<span class="operator">=</span><span class="string">&#x27;s3&#x27;</span> <span class="keyword">AND</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="keyword">FROM</span> sc z <span class="keyword">WHERE</span> sno<span class="operator">=</span>x.sno <span class="keyword">and</span> cno<span class="operator">=</span>y.cno))</span><br></pre></td></tr></table></figure>
+<h3 id="sql的数据操作">SQL的数据操作：</h3>
+<h4 id="数据插入">1.数据插入</h4>
+<h4 id="数据删除">2.数据删除</h4>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span><span class="operator">&lt;</span>表名<span class="operator">&gt;</span> <span class="keyword">WHERE</span></span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> sno <span class="keyword">NOT</span> <span class="keyword">IN</span> (<span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc)</span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> cno <span class="keyword">IN</span> (<span class="keyword">SELECT</span> cno <span class="keyword">FROM</span> c <span class="keyword">WHERE</span> cname<span class="operator">=</span><span class="string">&#x27;数据库原理&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="数据修改">3.数据修改</h4>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">UPDATE<span class="operator">&lt;</span>表名<span class="operator">&gt;</span> <span class="keyword">SET</span><span class="operator">&lt;</span>列名<span class="operator">&gt;=</span><span class="operator">&lt;</span>表达式<span class="operator">&gt;</span></span><br><span class="line">UPDATE sc <span class="keyword">SET</span> grade<span class="operator">=</span>grade<span class="operator">*</span><span class="number">1.04</span> <span class="keyword">WHERE</span> grade<span class="operator">&gt;=</span><span class="number">70</span></span><br><span class="line">UPDATE sc <span class="keyword">SET</span> grade<span class="operator">=</span>grade<span class="operator">*</span><span class="number">1.05</span> <span class="keyword">WHERE</span> grade<span class="operator">&lt;</span><span class="number">70</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -330,11 +420,9 @@
 <p><strong>第一题</strong>：给定一个矩阵， 判断是否存在单位矩阵，并给出所在列</p>
 <p>金泓宇的弱智思路：因为早起智商低下，所以就定义一个Mat单位阵，然后一点一段划过去判断能不能合上</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[yt]</span> = <span class="title">whethereye</span><span class="params">(A,m,n)</span></span></span><br><span class="line">yt=<span class="number">6.19</span>;</span><br><span class="line">M=<span class="built_in">min</span>(m,n);</span><br><span class="line">x=m-M+<span class="number">1</span>;y=n-M+<span class="number">1</span>;</span><br><span class="line">Mat=<span class="built_in">eye</span>(M,M);</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:x</span><br><span class="line">    subA=A(:,<span class="built_in">i</span>:<span class="built_in">i</span>+M<span class="number">-1</span>)</span><br><span class="line">    <span class="keyword">if</span>(subA==Mat)</span><br><span class="line">        yt=<span class="built_in">i</span>;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
 <p><strong>第二题：</strong>高斯消元解方程</p>
 <p>就正常按高斯消元的步骤就好，做的时候因为偷懒看了上学期的作业，行和列还给搞反了，看了半天怎么系数那一列做完都不动的</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span><span class="params">[x]</span>=<span class="title">gauss_elim</span><span class="params">(A,b)</span></span></span><br><span class="line">C=[A,b];</span><br><span class="line">[m,n]=<span class="built_in">size</span>(A);</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> =<span class="number">1</span>:n</span><br><span class="line">    C(<span class="built_in">i</span>,:) = C(<span class="built_in">i</span>,:)/C(<span class="built_in">i</span>,<span class="built_in">i</span>);</span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">j</span> =<span class="number">1</span>:n</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">i</span>~=<span class="built_in">j</span></span><br><span class="line">            C(<span class="built_in">j</span>,:)= C(<span class="built_in">j</span>,:)-C(<span class="built_in">i</span>,:).*C(<span class="built_in">j</span>,<span class="built_in">i</span>)</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">x=C(:,n+<span class="number">1</span>);</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
 
       
     </div>
@@ -403,14 +491,16 @@
 <p>实验目的：设输入电压为0时，扰动信号Td(s)=1/s,分别比较在无转速计开环控制状态下和有转速计闭环控制状态下电机输出转速稳定误差。</p>
 <p><strong>开环系统：</strong></p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%Speed Tachometer Example</span></span><br><span class="line">Ra=<span class="number">1</span>;Km=<span class="number">10</span>;<span class="built_in">j</span>=<span class="number">2</span>;f=<span class="number">0.5</span>;Kb=<span class="number">0.1</span>;</span><br><span class="line">num1=[<span class="number">1</span>];den1=[<span class="built_in">j</span>,Kb];sys1=tf(num1,den1);</span><br><span class="line">num2=[Km*Kb/Ra];den2=[<span class="number">1</span>];sys2=tf(num2,den2);</span><br><span class="line">sys_o=feedback(sys1,sys2);</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">sys_o=-sys_o</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">[yo,T]=step(sys_o);</span><br><span class="line"><span class="built_in">plot</span>(T,yo)</span><br><span class="line">title(<span class="string">&#x27;Open-loop Disturbance Step Response&#x27;</span>)</span><br><span class="line">xlabel(<span class="string">&#x27;Time (sec)&#x27;</span>),ylabel(<span class="string">&#x27;\omega_o&#x27;</span>),grid</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">yo(<span class="built_in">length</span>(T))</span><br></pre></td></tr></table></figure>
-
 <p><strong>实验结果：</strong></p>
-<p><img src="/img/%E5%BC%80%E7%8E%AF%E7%B3%BB%E7%BB%9F.jpg" alt="开环系统"></p>
+<figure>
+<img src="/img/开环系统.jpg" alt="" /><figcaption>开环系统</figcaption>
+</figure>
 <p><strong>闭环系统：</strong></p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%Speed Tachometer Example</span></span><br><span class="line">Ra=<span class="number">1</span>;Km=<span class="number">10</span>;J=<span class="number">2</span>;b=<span class="number">0.5</span>;Kb=<span class="number">0.1</span>;Ka=<span class="number">54</span>;Kt=<span class="number">1</span>;</span><br><span class="line">num1=[<span class="number">1</span>];den1=[J,b];sys1=tf(num1,den1);</span><br><span class="line">num2=[Ka*Kt];den2=[<span class="number">1</span>];sys2=tf(num2,den2);</span><br><span class="line">num3=[Kb];den3=[<span class="number">1</span>];sys3=tf(num3,den3);</span><br><span class="line">num4=[Km/Ra];den4=[<span class="number">1</span>];sys4=tf(num4,den4);</span><br><span class="line">sysa=parallel(sys2,sys3);</span><br><span class="line">sysb=series(sysa,sys4);</span><br><span class="line">sys_c=feedback(sys1,sysb);</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">sys_c=-sys_c</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">[yc,T]=step(sys_c);</span><br><span class="line"><span class="built_in">plot</span>(T,yc)</span><br><span class="line">title(<span class="string">&#x27;Closed-loop Disturbance Step Response&#x27;</span>)</span><br><span class="line">xlabel(<span class="string">&#x27;Time (sec)&#x27;</span>),ylabel(<span class="string">&#x27;\omega_c(rad/sec)&#x27;</span>),grid</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">yc(<span class="built_in">length</span>(T))</span><br></pre></td></tr></table></figure>
-
 <p><strong>实验结果：</strong></p>
-<p><img src="/img/%E9%97%AD%E7%8E%AF%E7%B3%BB%E7%BB%9F.jpg?%3C40%3E" alt="开环系统"></p>
+<figure>
+<img src="/img/闭环系统.jpg?%3C40%3E" alt="" /><figcaption>开环系统</figcaption>
+</figure>
 
       
     </div>
@@ -496,15 +586,19 @@
 <p>2.定义决策变量集合</p>
 <p>3.基于数据和决策变量构建目标函数</p>
 <p>4.建立等式或不等式约束条件</p>
-<h3 id="课程主要内容："><a href="#课程主要内容：" class="headerlink" title="课程主要内容："></a>课程主要内容：</h3><p><strong>线性规划</strong>：图解法，单纯形法</p>
+<h3 id="课程主要内容">课程主要内容：</h3>
+<p><strong>线性规划</strong>：图解法，单纯形法</p>
 <p><strong>非线性规划</strong>：无约束和有约束问题，梯度下降，牛顿法</p>
 <p><strong>整数规划</strong></p>
 <p><strong>动态规划</strong>：多阶段决策过程最优化</p>
-<p>叮咣太ppt做的不行 </p>
-<h3 id="线性规划"><a href="#线性规划" class="headerlink" title="线性规划"></a>线性规划</h3><p>线性规划的数学模型的三要素：</p>
+<p>叮咣太ppt做的不行</p>
+<h3 id="线性规划">线性规划</h3>
+<p>线性规划的数学模型的三要素：</p>
 <p>目标函数，决策变量，约束条件</p>
 <p>线性规划模型的特征：约束条件是一组多个决策变量的不等式或等式</p>
-<p><strong>线性规划问题的标准形式：</strong><br>$$<br>maxZ = \sum_{j=1}^nc_jx_j\\sum^n_{j=1}a_{ij}x_j = b_i, i =1,2,\ldots,n\x_j \geq 0,j =1,2,\ldots,n<br>$$<br><strong>线性规划问题转换标准形式：</strong></p>
+<p><strong>线性规划问题的标准形式：</strong> <span class="math display">\[
+maxZ = \sum_{j=1}^nc_jx_j\\\sum^n_{j=1}a_{ij}x_j = b_i, i =1,2,\ldots,n\\x_j \geq 0,j =1,2,\ldots,n
+\]</span> <strong>线性规划问题转换标准形式：</strong></p>
 <p>目标函数的转换：如果是求极小值，就Z‘=-Z</p>
 <p>变量的转换：无约束变量</p>
 <p>闭环比开环适应性好</p>
@@ -565,7 +659,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-02 16:40:38" itemprop="dateModified" datetime="2021-12-02T16:40:38+08:00">2021-12-02</time>
+        <time title="Modified: 2021-12-06 11:29:32" itemprop="dateModified" datetime="2021-12-06T11:29:32+08:00">2021-12-06</time>
       </span>
 
   
@@ -578,44 +672,39 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h3 id="第四章-结构化查询语言"><a href="#第四章-结构化查询语言" class="headerlink" title="第四章 结构化查询语言"></a>第四章 结构化查询语言</h3><p>因为学校的弱智安排，第一周要上机，所以从第四章开始讲</p>
+          <h3 id="第四章-结构化查询语言">第四章 结构化查询语言</h3>
+<p>因为学校的弱智安排，第一周要上机，所以从第四章开始讲</p>
 <p>数据库里不做排序的，用的是索引提高查询速度 （因为排序会造成数据冗余）</p>
 <p>SQL组成：</p>
 <p>数据定义：CREATE，ALTER，DROP</p>
 <p>查询语句：SELECT</p>
 <p>HAVING(分组，和分组有关用这个)WHERE(选行，分组没关用这个)</p>
-<h4 id="基本查询（都是单表查询）："><a href="#基本查询（都是单表查询）：" class="headerlink" title="基本查询（都是单表查询）："></a><strong>基本查询（都是单表查询）：</strong></h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sno,sname <span class="keyword">FROM</span> s; <span class="operator">/</span><span class="operator">/</span>从s表查sno sname</span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> s; <span class="operator">/</span><span class="operator">/</span>查询s表所有信息 <span class="operator">*</span>表示所有</span><br><span class="line"><span class="keyword">SELECT</span> sname,<span class="number">2021</span><span class="operator">-</span>age 出生年份 <span class="keyword">FROM</span> s;<span class="operator">/</span><span class="operator">/</span>查学生名字和出生年份</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span>表达式取名字 <span class="number">1.</span>字段 <span class="keyword">AS</span> 名称 <span class="number">2.</span>字段 名称</span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">distinct</span> sno <span class="keyword">FROM</span> sc; <span class="operator">/</span><span class="operator">/</span><span class="keyword">distinct</span> 去除重复行</span><br></pre></td></tr></table></figure>
-
+<h4 id="基本查询都是单表查询"><strong>基本查询（都是单表查询）：</strong></h4>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sno,sname <span class="keyword">FROM</span> s; <span class="operator">/</span><span class="operator">/</span>从s表查sno sname</span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> s; <span class="operator">/</span><span class="operator">/</span>查询s表所有信息 <span class="operator">*</span>表示所有</span><br><span class="line"><span class="keyword">SELECT</span> sname,<span class="number">2021</span><span class="operator">-</span>age 出生年份 <span class="keyword">FROM</span> s;<span class="operator">/</span><span class="operator">/</span>查学生名字和出生年份</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span>表达式取名字 <span class="number">1.</span>字段 <span class="keyword">AS</span> 名称 <span class="number">2.</span>字段 名称</span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">distinct</span> sno <span class="keyword">FROM</span> sc; <span class="operator">/</span><span class="operator">/</span><span class="keyword">distinct</span> 去除重复行</span><br></pre></td></tr></table></figure>
 <p><strong>查询——选择行：</strong>多个WHERE</p>
-<p>通配符：%多个字符，  _单个字符</p>
+<p>通配符：%多个字符， _单个字符</p>
 <p>LIKE是模糊匹配，=是精确匹配</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> age<span class="operator">&lt;</span><span class="number">2021</span><span class="number">-1995</span>; <span class="operator">/</span><span class="operator">/</span>查询年龄小于<span class="number">2021</span><span class="number">-1995</span></span><br><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> age<span class="operator">&gt;=</span><span class="number">20</span> <span class="keyword">AND</span> age<span class="operator">&lt;=</span><span class="number">25</span>; <span class="operator">/</span><span class="operator">/</span> 数据在两者之间可以用<span class="keyword">BETWEEN</span>  <span class="keyword">AND</span></span><br><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> age <span class="keyword">BETWEEN</span> <span class="number">20</span> <span class="keyword">AND</span> <span class="number">25</span>; </span><br><span class="line"><span class="keyword">SELECT</span> sno,grade <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> cno<span class="operator">=</span><span class="string">&#x27;c1&#x27;</span> <span class="keyword">OR</span> cno<span class="operator">=</span><span class="string">&#x27;c4&#x27;</span> <span class="keyword">OR</span> cno<span class="operator">=</span><span class="string">&#x27;c6&#x27;</span>;<span class="operator">/</span><span class="operator">/</span> <span class="keyword">IN</span> 的运算符判断前值是否在后集合</span><br><span class="line"><span class="keyword">SELECT</span> sno,grade <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> cno <span class="keyword">IN</span> (<span class="string">&#x27;c1&#x27;</span>,<span class="string">&#x27;c4&#x27;</span>,<span class="string">&#x27;c6&#x27;</span>);<span class="operator">/</span><span class="operator">/</span>所有字符型数据一定要加单引号</span><br><span class="line"><span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> grade <span class="keyword">IS</span> <span class="keyword">NULL</span>;<span class="operator">/</span><span class="operator">/</span>判断成绩为空</span><br><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> sname <span class="keyword">LIKE</span> <span class="string">&#x27;%敏%&#x27;</span>;</span><br><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> sname <span class="keyword">LIKE</span> <span class="string">&#x27;刘__&#x27;</span> <span class="keyword">OR</span> sname <span class="keyword">LIKE</span> <span class="string">&#x27;王__&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
 <p><strong>单表查询——聚合函数：</strong></p>
 <p>1.COUNT——统计行的个数，count+列名 统计该列值的个数</p>
 <p>2.SUM——该列求和 AVG MAX MIN</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="keyword">distinct</span> sno) <span class="keyword">AS</span> 人数 <span class="keyword">FROM</span> sc;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="operator">*</span>) 次数 <span class="keyword">FROM</span> sc;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="built_in">MAX</span>(age) <span class="keyword">AS</span> 老大,<span class="built_in">MIN</span>(age) <span class="keyword">AS</span> 老小 <span class="keyword">FROM</span> s;<span class="operator">/</span><span class="operator">/</span>最大最小</span><br><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(sno) <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> age<span class="operator">&gt;=</span><span class="number">19</span> <span class="keyword">AND</span> sex<span class="operator">=</span><span class="string">&#x27;女&#x27;</span>;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="built_in">AVG</span>(grade) 平均分,<span class="built_in">SUM</span>(grade) 总分 <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> sno<span class="operator">=</span><span class="string">&#x27;s1&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
 <p><strong>单表查询——分组排序：</strong></p>
 <p>查询结果分组：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(sno) <span class="keyword">FROM</span> sc <span class="keyword">GROUP</span> <span class="keyword">BY</span> cno;<span class="operator">/</span><span class="operator">/</span>这样写只有一堆数字</span><br><span class="line"><span class="keyword">SELECT</span> cno,<span class="built_in">COUNT</span>(sno) <span class="keyword">FROM</span> sc <span class="keyword">GROUP</span> <span class="keyword">BY</span> cno;<span class="operator">/</span><span class="operator">/</span>这样写才在前面有课程号</span><br></pre></td></tr></table></figure>
-
 <p>SQL规定：GROUP BY出现的列名 一定要在SELECT里出现</p>
 <p>SQL Server规定：SELECT里写的GROUP BY里要出现，但不一定代表按此分组</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc <span class="keyword">GROUP</span> <span class="keyword">BY</span> sno <span class="keyword">HAVING</span> <span class="built_in">count</span>(cno)<span class="operator">&gt;</span><span class="number">1</span>; <span class="operator">/</span><span class="operator">/</span>选课超过一个的学生学号</span><br><span class="line"><span class="keyword">SELECT</span> sex,<span class="built_in">COUNT</span>(sno),<span class="built_in">AVG</span>(age) <span class="keyword">FROM</span> s <span class="keyword">GROUP</span> <span class="keyword">BY</span> sex;</span><br><span class="line"><span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc <span class="keyword">GROUP</span> <span class="keyword">BY</span> sno <span class="keyword">HAVING</span> <span class="built_in">MIN</span>(grade)<span class="operator">&gt;</span><span class="number">70</span> ;<span class="operator">/</span><span class="operator">/</span>每门课都超过七十分</span><br></pre></td></tr></table></figure>
-
 <p>查询结果排序：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> cno,<span class="built_in">count</span>(sno),<span class="built_in">SUM</span>(grade) <span class="keyword">FROM</span> sc <span class="keyword">GROUP</span> <span class="keyword">BY</span> cno <span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="number">3</span> <span class="keyword">ASC</span>,<span class="number">2</span> <span class="keyword">DESC</span>; <span class="operator">/</span><span class="operator">/</span>按<span class="keyword">SELECT</span>后面的顺序</span><br><span class="line"><span class="keyword">SELECT</span> sno,<span class="built_in">count</span>(cno) <span class="keyword">FROM</span> sc <span class="keyword">GROUP</span> <span class="keyword">BY</span> sno <span class="keyword">HAVING</span> <span class="built_in">COUNT</span>(cno)<span class="operator">&gt;</span><span class="number">5</span> <span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="number">2</span> <span class="keyword">DESC</span>, <span class="number">1</span> <span class="keyword">ASC</span>;<span class="operator">/</span><span class="operator">/</span>默认升序</span><br></pre></td></tr></table></figure>
-
-<h4 id="多表查询-大的要来了-："><a href="#多表查询-大的要来了-：" class="headerlink" title="**多表查询(大的要来了)**："></a>**多表查询(大的要来了)**：</h4><p>联接操作：</p>
+<h4 id="多表查询大的要来了"><strong>多表查询(大的要来了)</strong>：</h4>
+<p>联接操作：</p>
 <p>INNER JOIN 内联接（两张表要有相同的，张三和张三接一起）</p>
 <p>CROSS JOIN 交叉联接（啥关系也没有连一起）</p>
 <p>自身联接：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc <span class="keyword">GROUP</span> <span class="keyword">BY</span> sno <span class="keyword">HAVING</span> <span class="built_in">COUNT</span>(cno)<span class="operator">&gt;=</span><span class="number">2</span>;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> x.sno <span class="keyword">FROM</span> sc x,sc y <span class="keyword">WHERE</span> x.sno<span class="operator">=</span>y.sno <span class="keyword">AND</span> x.cno<span class="operator">&lt;&gt;</span>y.cno;<span class="operator">/</span><span class="operator">/</span>自身联接 同一个人的课程号不同</span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> x.sno,sname <span class="keyword">FROM</span> s,sc x,sc y <span class="keyword">WHERE</span> s.sno<span class="operator">=</span>x.sno <span class="keyword">AND</span> s.sno<span class="operator">=</span>y.sno <span class="keyword">AND</span> x.cno<span class="operator">=</span><span class="string">&#x27;c1&#x27;</span> <span class="keyword">AND</span> y.cno<span class="operator">=</span><span class="string">&#x27;c2&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
 <p>复合条件联接：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sname,grade <span class="keyword">FROM</span> s,sc,c <span class="keyword">WHERE</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">AND</span> c.cno<span class="operator">=</span>sc.cno <span class="keyword">AND</span> cname<span class="operator">=</span><span class="string">&#x27;VB&#x27;</span> <span class="keyword">AND</span> grade<span class="operator">&gt;</span><span class="number">70</span>;<span class="operator">/</span><span class="operator">/</span>查修了VB且超<span class="number">70</span>分</span><br><span class="line"><span class="keyword">SELECT</span> s.sno,sname <span class="keyword">FROM</span> s,sc <span class="keyword">WHERE</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">GROUP</span> <span class="keyword">BY</span> s.sno <span class="keyword">HAVING</span> <span class="built_in">min</span>(grade)<span class="operator">&gt;</span><span class="number">70</span></span><br><span class="line"><span class="keyword">SELECT</span> sno,sname,<span class="built_in">count</span>(cno) <span class="keyword">FROM</span> s,sc <span class="keyword">WHERE</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">GROUP</span> <span class="keyword">BY</span> s.sno <span class="keyword">HAVING</span> <span class="built_in">COUNT</span>(cno)<span class="operator">&gt;</span><span class="number">5</span> <span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="number">3</span> <span class="keyword">DESC</span>,<span class="number">1</span></span><br></pre></td></tr></table></figure>
-
 
       
     </div>
@@ -777,25 +866,25 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>应用层 &lt;—-&gt; 数据传输层</p>
+          <p>应用层 &lt;----&gt; 数据传输层</p>
 <p>数据传输层提供 socket api</p>
 <p>网络应用的体系结构：</p>
 <p>客户端——服务器模式（C/S）</p>
 <p>服务器：持续运行 相应资源 软件 硬件数据资源都在服务器上</p>
 <p>客户端：可以有动态地址 请求资源</p>
 <p>问题：可扩展性差 架构随着用户的增加 达到阈值时 性能急剧下降</p>
-<p>​            可靠性差 需求服务器持续运行</p>
+<p>​ 可靠性差 需求服务器持续运行</p>
 <p>对等体 (P2P)</p>
 <p>平滑扩展 几乎没有持续运行的服务器</p>
 <p>节点提供的服务能力仅在其上线时提供</p>
 <p>混合体(C/S &amp; P2P)</p>
-<p>Napster  QQ </p>
+<p>Napster QQ</p>
 <p>双方的通信是P2P 注册是C/S</p>
 <p>进程通信</p>
 <p>问题：标识自己的地址 唯一的地址 别人能定位到</p>
-<p>​            使用传输层的api</p>
+<p>​ 使用传输层的api</p>
 <p>寻址：在哪个主机ip 是TCP/UDP 在哪个端口</p>
-<p>telnet: 23 web: 80 ftp: 21 </p>
+<p>telnet: 23 web: 80 ftp: 21</p>
 <p>应用进程间的通信可以由两个端节点表示</p>
 <p>层间接口携带的信息：谁发的 发给谁 发了什么</p>
 <p>端口号(port) ip是主机的标识 ip上有很多的应用进程</p>
@@ -880,35 +969,35 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>lfy：不仅是有的同学 很多教计算机的老师 张口就是乱说</p>
-<p>​        中国人写书都是很功利的目的 所以现在写的书都很差</p>
-<p>​        以后上课关起门来 我叫自己朕 你们叫我陛下</p>
+<p>​ 中国人写书都是很功利的目的 所以现在写的书都很差</p>
+<p>​ 以后上课关起门来 我叫自己朕 你们叫我陛下</p>
 <p>lfy说要考的：硬件做的是指令系统 用的是指令集</p>
-<p>​                        什么是函数 什么是系统空间调用</p>
+<p>​ 什么是函数 什么是系统空间调用</p>
 <p>1.3.2共享</p>
 <p>lfy：你们一起在教室上课，就是共享了我（？）</p>
 <p>共享会有安全性问题</p>
 <p>1.3.3虚拟</p>
 <p>时分复用技术——虚拟处理机技术——虚拟设备技术</p>
-<p>操作系统本身就是虚拟机 是一个资源管理器 </p>
+<p>操作系统本身就是虚拟机 是一个资源管理器</p>
 <p>eg. 硬盘—文件</p>
-<p>​      cpu—进程&amp;&amp;线程</p>
+<p>​ cpu—进程&amp;&amp;线程</p>
 <p>1.3.4异步 (Asynchronism)</p>
 <p>我们写的程序是顺序执行的 但是计算机内的许多程序是并发运行的</p>
-<p>各个程序跑的有快有慢 </p>
+<p>各个程序跑的有快有慢</p>
 <p>1.4 操作系统的主要功能</p>
 <p>1.4.1处理器管理功能/进程管理功能 （1.控制进程 2.进程同步 3.进程通信 4.调度）</p>
-<p>​          计算机层次：</p>
-<p>​        APP APP APP</p>
-<p>​    —————— （房管指令）</p>
-<p>​                OS</p>
-<p>​    —————— （指令集）</p>
-<p>​               硬件 </p>
+<p>​ 计算机层次：</p>
+<p>​ APP APP APP</p>
+<p>​ —————— （房管指令）</p>
+<p>​ OS</p>
+<p>​ —————— （指令集）</p>
+<p>​ 硬件</p>
 <p>1.4.2存储器管理功能</p>
 <p>1.内存分配 内存操作系统给出去了也可以收回来</p>
 <p>（1）给程序分配内存空间（2）提高存储器利用率（3）允许正在运行的程序申请附加的内存空间</p>
 <p>2.内存保护</p>
 <p>3.地址映射 将地址空间中逻辑地址转换为内存空间中对应的物理地址</p>
-<p>4.内存扩充 </p>
+<p>4.内存扩充</p>
 <p>1.4.3设备管理功能</p>
 <p>（1）完成I/O请求 完成指定的I/O操作</p>
 
@@ -1005,16 +1094,16 @@
 <p>如果转义字符也出现在数据当中，在其之前再插入一个转义字符，当连续接受两个转义字符时，删除前面的一个</p>
 <p>3.3差错检测</p>
 <p>传输错误的比特占总比特的比例为误码率BER（Bit Error Rate）</p>
-<p>误码率和信噪比有很大关系                                                                                                                                                                                                                                                                                                                                 </p>
+<p>误码率和信噪比有很大关系</p>
 <p>汉明距离：</p>
 <p>如果要检测e个差错，则编码集的汉明距离至少为e+1</p>
 <p>如果要纠正t个差错，则编码集的汉明距离至少为2t+1</p>
 <p>如果要检测e个差错，同时纠正t个差错，则编码集的汉明距离至少为e+t+1</p>
 <p>eg.纠错 000000 000111 111000 111111 汉明距离=3</p>
-<p>​                010111 恢复为 000111 错一位 </p>
+<p>​ 010111 恢复为 000111 错一位</p>
 <p>3.4差错控制编码</p>
 <p>奇偶检验码：在数据码后附加一个校验位，使构成的码组中1的个数为奇数，或偶数</p>
-<p>0100101（0）奇校验 </p>
+<p>0100101（0）奇校验</p>
 <p>0100101（1）偶校验</p>
 <p>奇偶检验码只能检测出奇数个错误，无法检测出偶数个错误，但是实践简单</p>
 <p>使用水平/二维奇偶检验</p>
@@ -1022,105 +1111,16 @@
 <p>实用的停止等待协议：</p>
 <p>在实际的数据传输过程中，传输差错是不可避免的</p>
 <p>传输差错导致接收的数据帧差错，接收方要求发送方重发数据帧</p>
-<p>(a)正常情况 A DATA0 -&gt; B -&gt; ACK -&gt; A  -&gt; DATA1 -&gt;B -&gt;ACK</p>
-<p>(b)数据帧错误 A DATA0 -&gt; B -&gt;(出错) NAK -&gt; A  -&gt; DATA0 -&gt;B -&gt;ACK</p>
-<p>(c)数据帧丢失 A DATA0 -&gt; B -&gt;(丢失) (重传) A  -&gt; DATA0 -&gt;B -&gt;ACK</p>
-<p>(d)确认帧丢失 A DATA0 -&gt; B -&gt; ACK（丢失）  A  -&gt; DATA0 -&gt;B -&gt;ACK（要是再要就从鸿福了）</p>
+<p>(a)正常情况 A DATA0 -&gt; B -&gt; ACK -&gt; A -&gt; DATA1 -&gt;B -&gt;ACK</p>
+<p>(b)数据帧错误 A DATA0 -&gt; B -&gt;(出错) NAK -&gt; A -&gt; DATA0 -&gt;B -&gt;ACK</p>
+<p>(c)数据帧丢失 A DATA0 -&gt; B -&gt;(丢失) (重传) A -&gt; DATA0 -&gt;B -&gt;ACK</p>
+<p>(d)确认帧丢失 A DATA0 -&gt; B -&gt; ACK（丢失） A -&gt; DATA0 -&gt;B -&gt;ACK（要是再要就从鸿福了）</p>
 <p>所以需要解决接收方的重传问题</p>
 <p>超时重传技术：</p>
 <p>结点A发送完一个数据帧是，就启动一个超时计时器，此计时器又称定时器</p>
 <p>重复帧问题：（应答帧丢失导致）</p>
 <p>每个数据帧带上不同的发送序号，每发送一个新的数据帧就把序号加1</p>
 <p>帧的编号问题：任何的编号系统的序号所占用的比特数都是有限的，因此在一段事件后，发送的序号就会重复</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/img/cat.JPG">
-      <meta itemprop="name" content="Aston Jin">
-      <meta itemprop="description" content="某个人的个人主页罢了">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Aston-Jin">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/09/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="post-title-link" itemprop="url">操作系统</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-09-09 15:07:07" itemprop="dateCreated datePublished" datetime="2021-09-09T15:07:07+08:00">2021-09-09</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-30 16:25:18" itemprop="dateModified" datetime="2021-11-30T16:25:18+08:00">2021-11-30</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" itemprop="url" rel="index"><span itemprop="name">操作系统</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>老佛爷吐槽：中国人说话一直没什么逻辑</p>
-<p>老佛爷技能：把粉笔往地上一丢 粉笔就断了</p>
-<p>1.在核心态下运行的软件</p>
-<p>interface 接口 操作系统是一个硬件上的软件平台 在操作系统上进而运行application</p>
-<p>文件是操作系统虚拟出来的概念 离开了操作系统就没有这个概念</p>
-<p>1.2.3多道批处理系统</p>
-<p>中断是做切换的trigger</p>
-<p>1.3.1并发</p>
-<p>并行是好几个事情一起发生</p>
-<p>并发是好几个事情在同一个时间</p>
 
       
     </div>
@@ -1177,6 +1177,12 @@
   
 
 
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
 
 
 
