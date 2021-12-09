@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-12-06T03:30:02.209Z</updated>
+  <updated>2021-12-09T02:07:50.948Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,84 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>金泓宇不想睡觉呢</title>
+    <link href="http://example.com/2021/12/08/%E9%87%91%E6%B3%93%E5%AE%87%E4%B8%8D%E6%83%B3%E7%9D%A1%E8%A7%89%E5%91%A2/"/>
+    <id>http://example.com/2021/12/08/%E9%87%91%E6%B3%93%E5%AE%87%E4%B8%8D%E6%83%B3%E7%9D%A1%E8%A7%89%E5%91%A2/</id>
+    <published>2021-12-08T03:08:53.000Z</published>
+    <updated>2021-12-09T02:07:50.948Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近也没有特别不想睡觉吧。只不过因为不睡觉的时间要过的比白天快乐不少。所以大概愿意用白天至少目前来说没有那么，完全是金泓宇的时间来不清醒，这样晚上大概就会清醒一点，因为本来醒着是一件无聊的事情，最近变得有趣一点了。金泓宇必须要回家，不回家谁去陪家里人呢，就像如果爸爸不常在家，爸爸回家了就一定要回去陪爸爸，所以金泓宇周五一定要回家。但是就算今天没课了，如果金泓宇回去了，就没有人陪金泓宇了，现在就走，谁陪我呢，所以金泓宇好坏嗷。所以周五到家，才是金泓宇的合法回家时间。</p><figure><img src="/img/dog.JPG" alt="" /><figcaption>某个小朋友想养的萨摩耶</figcaption></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近也没有特别不想睡觉吧。只不过因为不睡觉的时间要过的比白天快乐不少。所以大概愿意用白天至少目前来说没有那么，完全是金泓宇的时间来不清醒，这样晚上大概就会清醒一点，因为本来醒着是一件无聊的事情，最近变得有趣一点了。金泓宇必须要回家，不回家谁去陪家里人呢，就像如果爸爸不常在家</summary>
+      
+    
+    
+    
+    <category term="金泓宇的碎碎念" scheme="http://example.com/categories/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    
+    <category term="金泓宇的碎碎念" scheme="http://example.com/tags/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习第三章</title>
+    <link href="http://example.com/2021/12/06/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    <id>http://example.com/2021/12/06/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E7%AB%A0/</id>
+    <published>2021-12-06T12:11:01.000Z</published>
+    <updated>2021-12-06T15:49:38.797Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="第三章-线性模型">第三章 线性模型</h3><p>线性模型的基本形式： <span class="math display">\[f(x)=w_1x_1+w_2x_2+\ldots+w_dx_d+b \]</span> 一般向量形式写成： <span class="math display">\[ f(x)=w^Tx+b\]</span></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;第三章-线性模型&quot;&gt;第三章 线性模型&lt;/h3&gt;
+&lt;p&gt;线性模型的基本形式： &lt;span class=&quot;math display&quot;&gt;\[
+f(x)=w_1x_1+w_2x_2+\ldots+w_dx_d+b 
+\]&lt;/span&gt; 一般向量形式写成： &lt;span</summary>
+      
+    
+    
+    
+    
+    <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
+    
+    <category term="机器学习基础" scheme="http://example.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习第二章</title>
+    <link href="http://example.com/2021/12/06/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E5%91%A8/"/>
+    <id>http://example.com/2021/12/06/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E5%91%A8/</id>
+    <published>2021-12-06T10:05:32.000Z</published>
+    <updated>2021-12-06T12:10:03.823Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="第二章-模型评估与选择">第二章 模型评估与选择</h3><h4 id="经验误差与过拟合"><strong>经验误差与过拟合：</strong></h4><p>样本误差，测试误差，泛化误差</p><p>过拟合：将训练样本本身的特点当作所有样本的一般性质，导致泛化性能下降</p><p>目前的解决方法：优化目标加正则项、early stop</p><h4 id="评估方法"><strong>评估方法：</strong></h4><p>我们假设测试集是从样本真实分布中独立采样获得，将测试集上的测试误差作为泛化误差的近似，所以测试集和训练集要尽可能的互斥。</p><p>通常将m个样本的数据集D，拆分成训练集S和测试集T</p><p>1.留出法 直接将数据集划分为两个互斥集合，测试/训练集的数据分布要尽量保持一致。一般做若干次随机划分，重复实验取平均值</p><p>2.交叉验证法</p><p>将数据集划分成k个大小相同的互斥子集。每次用k-1个子集的并集作为训练集，余下的子集作为测试集，最终返回k个测试结果的均值。</p><p>留一法：交叉验证的特例。m个样本只有唯一方法划分为m个子集——每个子集包含一个样本。</p><p>3.自助法</p><p>每次在D里选一个样本，放到D‘，然后放回。重复执行m次，获得一个D’。</p><h4 id="性能量度"><strong>性能量度：</strong></h4><p>错误率和精度：加起来等于1 。错误率就是错的占样本的比例，精度就是对的占样本的比例。</p><p><strong>混淆矩阵</strong>：TP（真正例）+FP（假正例）+TN（真反例）+FN（假反例）=样例总数</p><p>查准率和查全率：P=TP/(TP+FP)查准率 R=TP/(TP+FN)查全率</p><p>以查准率为Y轴查全率为X轴，做P-R曲线。哪个包住了哪一个就是效果更好。在两个曲线有交叉的情况下，可以计算面积。或者考虑在某一个特定的点下，查准率和查全率的指标。</p><p><strong>“平衡点”</strong>：平衡点是曲线上查询率=查全率时的取值。平衡点谁更高。哪个学习器就更好。</p><p>F1度量：F1=(2xTP)/(样例总数+TP-TN) <span class="math display">\[F_{\beta}=\frac{(1+\beta^2)\times P \times R}{(\beta^2\times P)+R}\]</span> <strong>ROC与AUC：</strong>很多学习器的测试样本产生一个实值或者概率预测，然后将这个预测值和一个分类阈值进行比较，大于则为正例，小于则为反例。ROC曲线的纵轴是真正例率（TPR True Positive Rate），横轴是假正例率（FPR false Positive Rate）。</p><p>AUC值是ROC曲线下的面积，即Area Under ROC Curve。根据ROC的画法，AUC的计算可以估算为矩形面积: <span class="math display">\[AUC=\frac{1}{2}\sum^{m-1}_{i=1}(x_{i+1}-x_i).(y_i+y_{i+1})\]</span></p><h4 id="比较检验"><strong>比较检验：</strong></h4><p><strong>假设检验：</strong>假设检验中的“假设”是对学习器泛化错误率分布的某种判断或猜想。例如a&lt;a0。我们可以使用二项检验或者t检验。</p><p>交叉验证t检验，5x2交叉验证是做五次2折交叉验证。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;第二章-模型评估与选择&quot;&gt;第二章 模型评估与选择&lt;/h3&gt;
+&lt;h4 id=&quot;经验误差与过拟合&quot;&gt;&lt;strong&gt;经验误差与过拟合：&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;样本误差，测试误差，泛化误差&lt;/p&gt;
+&lt;p&gt;过拟合：将训练样本本身的特点当作所有样本的一般性</summary>
+      
+    
+    
+    
+    
+    <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
+    
+    <category term="机器学习基础" scheme="http://example.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
   
   <entry>
     <title>数据库第二周</title>
