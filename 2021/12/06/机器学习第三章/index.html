@@ -21,15 +21,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.8.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="第三章 线性模型 线性模型的基本形式： \[ f(x)&#x3D;w_1x_1+w_2x_2+\ldots+w_dx_d+b  \] 一般向量形式写成： \[  f(x)&#x3D;w^Tx+b \]">
+<meta name="description" content="第三章 线性模型 线性模型的基本形式： \[ f(x)&#x3D;w_1x_1+w_2x_2+\ldots+w_dx_d+b  \] 一般向量形式写成： \[ f(x)&#x3D;w^Tx+b \] 单一属性的线性回归目标： \[ f(x)&#x3D;wx_i+b\\st.\rightarrow(x)\simeq y \] 局部加权线性回归：降低某一个特征的影响 对于某一个周期性波动性的数据，使用线性模型明显和">
 <meta property="og:type" content="article">
 <meta property="og:title" content="机器学习第三章">
 <meta property="og:url" content="http://example.com/2021/12/06/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E7%AB%A0/index.html">
 <meta property="og:site_name" content="Aston-Jin">
-<meta property="og:description" content="第三章 线性模型 线性模型的基本形式： \[ f(x)&#x3D;w_1x_1+w_2x_2+\ldots+w_dx_d+b  \] 一般向量形式写成： \[  f(x)&#x3D;w^Tx+b \]">
+<meta property="og:description" content="第三章 线性模型 线性模型的基本形式： \[ f(x)&#x3D;w_1x_1+w_2x_2+\ldots+w_dx_d+b  \] 一般向量形式写成： \[ f(x)&#x3D;w^Tx+b \] 单一属性的线性回归目标： \[ f(x)&#x3D;wx_i+b\\st.\rightarrow(x)\simeq y \] 局部加权线性回归：降低某一个特征的影响 对于某一个周期性波动性的数据，使用线性模型明显和">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-12-06T12:11:01.000Z">
-<meta property="article:modified_time" content="2021-12-06T15:49:38.797Z">
+<meta property="article:modified_time" content="2021-12-13T12:51:03.300Z">
 <meta property="article:author" content="Aston Jin">
 <meta property="article:tag" content="上海大学倒霉课程">
 <meta property="article:tag" content="机器学习基础">
@@ -93,7 +93,7 @@
         <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">5</span></a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">19</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">20</span></a></li>
         <li class="menu-item menu-item-schedule"><a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a></li>
   </ul>
 </nav>
@@ -140,7 +140,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-count">20</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -235,10 +235,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-12-06 20:11:01 / Modified: 23:49:38" itemprop="dateCreated datePublished" datetime="2021-12-06T20:11:01+08:00">2021-12-06</time>
+      <time title="Created: 2021-12-06 20:11:01" itemprop="dateCreated datePublished" datetime="2021-12-06T20:11:01+08:00">2021-12-06</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-13 20:51:03" itemprop="dateModified" datetime="2021-12-13T20:51:03+08:00">2021-12-13</time>
+      </span>
 
   
 </div>
@@ -251,11 +257,25 @@
     
     <div class="post-body" itemprop="articleBody">
         <h3 id="第三章-线性模型">第三章 线性模型</h3>
-<p>线性模型的基本形式： <span class="math display">\[
+<p><strong>线性模型的基本形式：</strong> <span class="math display">\[
 f(x)=w_1x_1+w_2x_2+\ldots+w_dx_d+b 
 \]</span> 一般向量形式写成： <span class="math display">\[
- f(x)=w^Tx+b
-\]</span></p>
+f(x)=w^Tx+b
+\]</span> <strong>单一属性的线性回归目标：</strong> <span class="math display">\[
+f(x)=wx_i+b\\st.\rightarrow(x)\simeq y
+\]</span> <strong>局部加权线性回归：</strong>降低某一个特征的影响</p>
+<p>对于某一个周期性波动性的数据，使用线性模型明显和原模型的差别较大</p>
+<p>平滑问题：有趋势的或是季节性数据</p>
+<p>对于存在于该数据周围的所有数据按照距离赋予权值，这里我们使用高斯函数进行权值计算。高斯函数定义为空间中任意一点xi到x之间欧氏距离的单调函数。 <span class="math display">\[
+k(x,x&#39;)=e^{-\frac{|x-x&#39;|^2}{2\sigma^2}}
+\]</span> <strong>对数线性回归：</strong>输出标记的对数为线性模型逼近的目标。 <span class="math display">\[
+lny=w^Tx+b \Leftrightarrow y=w^Tx+b
+\]</span> <strong>对数几率回归：</strong></p>
+<p>将y视为样本x作为正例的可能性，则1-y是反例的可能性，y/1-y成为几率。反映了x作为正例的相对可能性，取其对数得到对数几率。</p>
+<p>对数几率回归的优点：</p>
+<p>无需事先假设数据分布，直接对分类可行性建模，避免假设分布不准确带来的问题</p>
+<p>对率函数是任意阶可导的凸函数</p>
+<p>极大似然估计：</p>
 
     </div>
 

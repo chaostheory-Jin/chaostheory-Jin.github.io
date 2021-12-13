@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-12-13T01:32:17.150Z</updated>
+  <updated>2021-12-13T03:35:40.078Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据库第三周</title>
+    <link href="http://example.com/2021/12/13/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%B8%89%E5%91%A8/"/>
+    <id>http://example.com/2021/12/13/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%B8%89%E5%91%A8/</id>
+    <published>2021-12-13T02:00:52.000Z</published>
+    <updated>2021-12-13T03:35:40.078Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="视图">视图</h3><p><strong>视图的定义：</strong>(1)视图是从一个表或者多个表里导出的。(2)视图是一张虚表。(3)视图定义后可以和表一样操作</p><p>数据不在视图里面，在原来的表里面</p><p>视图的作用：安全</p><p>1.SQL语句创建视图：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">VIEW</span><span class="operator">&lt;</span>name<span class="operator">&gt;</span>[<span class="operator">&lt;</span>list<span class="operator">&gt;</span>] <span class="keyword">AS</span> <span class="operator">&lt;</span>subselect<span class="operator">&gt;</span>[<span class="keyword">WITH</span> <span class="keyword">CHECK</span> OPTION]</span><br></pre></td></tr></table></figure><p>2.SQL视图的删除：只删除视图的定义，和原来表里面的数据一点关系都没有</p><p>视图的查询：DBMS对视图的查询会转换为对表的查询</p><p>3.视图的更新</p><p>视图的更新是有条件限制的。（体现了视图的安全性）</p><p>（1）从单个关系仅使用了选择和投影导出的 这个是好更新的</p><p>（2）列出现表达式和常数是不好INSERT和UPDATE的(不好更新的太多了，不想记了)</p><p>老板四十岁以后悟出的道理：要大量的接触社会，还一定要发SCI，还一定要对社会有贡献</p><h3 id="嵌入式sql">嵌入式SQL</h3><p>嵌入式SQL的使用规定：</p><p>使用SQL语句逐一从游标中获取记录，并赋给主变量，由宿主语言作进一步的处理。游标相当于里面放了一张表，分四个步骤：</p><p>（1）定义游标（2）打开游标（3）推进游标（4）关闭游标</p><p>如果查询结果只是一行，那只要定义几个变量</p><p>如果查询结果是一张表，一定要靠游标完成</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;视图&quot;&gt;视图&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;视图的定义：&lt;/strong&gt;(1)视图是从一个表或者多个表里导出的。(2)视图是一张虚表。(3)视图定义后可以和表一样操作&lt;/p&gt;
+&lt;p&gt;数据不在视图里面，在原来的表里面&lt;/p&gt;
+&lt;p&gt;视图的作用：安全&lt;/p&gt;</summary>
+      
+    
+    
+    
+    
+    <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
+    
+    <category term="数据库原理" scheme="http://example.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>矫情</title>
@@ -69,17 +96,17 @@
     <link href="http://example.com/2021/12/06/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
     <id>http://example.com/2021/12/06/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E7%AB%A0/</id>
     <published>2021-12-06T12:11:01.000Z</published>
-    <updated>2021-12-06T15:49:38.797Z</updated>
+    <updated>2021-12-13T12:51:03.300Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="第三章-线性模型">第三章 线性模型</h3><p>线性模型的基本形式： <span class="math display">\[f(x)=w_1x_1+w_2x_2+\ldots+w_dx_d+b \]</span> 一般向量形式写成： <span class="math display">\[ f(x)=w^Tx+b\]</span></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="第三章-线性模型">第三章 线性模型</h3><p><strong>线性模型的基本形式：</strong> <span class="math display">\[f(x)=w_1x_1+w_2x_2+\ldots+w_dx_d+b \]</span> 一般向量形式写成： <span class="math display">\[f(x)=w^Tx+b\]</span> <strong>单一属性的线性回归目标：</strong> <span class="math display">\[f(x)=wx_i+b\\st.\rightarrow(x)\simeq y\]</span> <strong>局部加权线性回归：</strong>降低某一个特征的影响</p><p>对于某一个周期性波动性的数据，使用线性模型明显和原模型的差别较大</p><p>平滑问题：有趋势的或是季节性数据</p><p>对于存在于该数据周围的所有数据按照距离赋予权值，这里我们使用高斯函数进行权值计算。高斯函数定义为空间中任意一点xi到x之间欧氏距离的单调函数。 <span class="math display">\[k(x,x&#39;)=e^{-\frac{|x-x&#39;|^2}{2\sigma^2}}\]</span> <strong>对数线性回归：</strong>输出标记的对数为线性模型逼近的目标。 <span class="math display">\[lny=w^Tx+b \Leftrightarrow y=w^Tx+b\]</span> <strong>对数几率回归：</strong></p><p>将y视为样本x作为正例的可能性，则1-y是反例的可能性，y/1-y成为几率。反映了x作为正例的相对可能性，取其对数得到对数几率。</p><p>对数几率回归的优点：</p><p>无需事先假设数据分布，直接对分类可行性建模，避免假设分布不准确带来的问题</p><p>对率函数是任意阶可导的凸函数</p><p>极大似然估计：</p>]]></content>
     
     
       
       
     <summary type="html">&lt;h3 id=&quot;第三章-线性模型&quot;&gt;第三章 线性模型&lt;/h3&gt;
-&lt;p&gt;线性模型的基本形式： &lt;span class=&quot;math display&quot;&gt;\[
+&lt;p&gt;&lt;strong&gt;线性模型的基本形式：&lt;/strong&gt; &lt;span class=&quot;math display&quot;&gt;\[
 f(x)=w_1x_1+w_2x_2+\ldots+w_dx_d+b 
-\]&lt;/span&gt; 一般向量形式写成： &lt;span</summary>
+\]&lt;/span</summary>
       
     
     
