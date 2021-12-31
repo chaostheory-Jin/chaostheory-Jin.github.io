@@ -89,7 +89,7 @@
         <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">5</span></a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">21</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">23</span></a></li>
         <li class="menu-item menu-item-schedule"><a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a></li>
   </ul>
 </nav>
@@ -135,7 +135,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">23</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -197,6 +197,164 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/02/%E8%BF%90%E7%AD%B9%E4%B8%8E%E4%BC%98%E5%8C%96%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/cat.JPG">
+      <meta itemprop="name" content="Aston Jin">
+      <meta itemprop="description" content="某个人的个人主页罢了">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Aston-Jin">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/12/02/%E8%BF%90%E7%AD%B9%E4%B8%8E%E4%BC%98%E5%8C%96%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C/" class="post-title-link" itemprop="url">运筹与优化第一次实验</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-12-02 09:00:39 / Modified: 09:05:04" itemprop="dateCreated datePublished" datetime="2021-12-02T09:00:39+08:00">2021-12-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%BF%90%E7%AD%B9%E4%B8%8E%E4%BC%98%E5%8C%96/" itemprop="url" rel="index"><span itemprop="name">运筹与优化</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><strong>实验要求：</strong></p>
+<p><strong>第一题</strong>：给定一个矩阵， 判断是否存在单位矩阵，并给出所在列</p>
+<p>金泓宇的弱智思路：因为早起智商低下，所以就定义一个Mat单位阵，然后一点一段划过去判断能不能合上</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[yt]</span> = <span class="title">whethereye</span><span class="params">(A,m,n)</span></span></span><br><span class="line">yt=<span class="number">6.19</span>;</span><br><span class="line">M=<span class="built_in">min</span>(m,n);</span><br><span class="line">x=m-M+<span class="number">1</span>;y=n-M+<span class="number">1</span>;</span><br><span class="line">Mat=<span class="built_in">eye</span>(M,M);</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:x</span><br><span class="line">    subA=A(:,<span class="built_in">i</span>:<span class="built_in">i</span>+M<span class="number">-1</span>)</span><br><span class="line">    <span class="keyword">if</span>(subA==Mat)</span><br><span class="line">        yt=<span class="built_in">i</span>;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p><strong>第二题：</strong>高斯消元解方程</p>
+<p>就正常按高斯消元的步骤就好，做的时候因为偷懒看了上学期的作业，行和列还给搞反了，看了半天怎么系数那一列做完都不动的</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span><span class="params">[x]</span>=<span class="title">gauss_elim</span><span class="params">(A,b)</span></span></span><br><span class="line">C=[A,b];</span><br><span class="line">[m,n]=<span class="built_in">size</span>(A);</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> =<span class="number">1</span>:n</span><br><span class="line">    C(<span class="built_in">i</span>,:) = C(<span class="built_in">i</span>,:)/C(<span class="built_in">i</span>,<span class="built_in">i</span>);</span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">j</span> =<span class="number">1</span>:n</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">i</span>~=<span class="built_in">j</span></span><br><span class="line">            C(<span class="built_in">j</span>,:)= C(<span class="built_in">j</span>,:)-C(<span class="built_in">i</span>,:).*C(<span class="built_in">j</span>,<span class="built_in">i</span>)</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">x=C(:,n+<span class="number">1</span>);</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/01/%E6%99%BA%E8%83%BD%E7%B3%BB%E7%BB%9F%E6%8E%A7%E5%88%B6%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/cat.JPG">
+      <meta itemprop="name" content="Aston Jin">
+      <meta itemprop="description" content="某个人的个人主页罢了">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Aston-Jin">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/12/01/%E6%99%BA%E8%83%BD%E7%B3%BB%E7%BB%9F%E6%8E%A7%E5%88%B6%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C/" class="post-title-link" itemprop="url">智能系统控制第一次实验</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-12-01 15:53:54 / Modified: 16:28:58" itemprop="dateCreated datePublished" datetime="2021-12-01T15:53:54+08:00">2021-12-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><strong>开环系统和闭环系统的抗扰动性能对比</strong></p>
+<p>实验目的：设输入电压为0时，扰动信号Td(s)=1/s,分别比较在无转速计开环控制状态下和有转速计闭环控制状态下电机输出转速稳定误差。</p>
+<p><strong>开环系统：</strong></p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%Speed Tachometer Example</span></span><br><span class="line">Ra=<span class="number">1</span>;Km=<span class="number">10</span>;<span class="built_in">j</span>=<span class="number">2</span>;f=<span class="number">0.5</span>;Kb=<span class="number">0.1</span>;</span><br><span class="line">num1=[<span class="number">1</span>];den1=[<span class="built_in">j</span>,Kb];sys1=tf(num1,den1);</span><br><span class="line">num2=[Km*Kb/Ra];den2=[<span class="number">1</span>];sys2=tf(num2,den2);</span><br><span class="line">sys_o=feedback(sys1,sys2);</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">sys_o=-sys_o</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">[yo,T]=step(sys_o);</span><br><span class="line"><span class="built_in">plot</span>(T,yo)</span><br><span class="line">title(<span class="string">&#x27;Open-loop Disturbance Step Response&#x27;</span>)</span><br><span class="line">xlabel(<span class="string">&#x27;Time (sec)&#x27;</span>),ylabel(<span class="string">&#x27;\omega_o&#x27;</span>),grid</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">yo(<span class="built_in">length</span>(T))</span><br></pre></td></tr></table></figure>
+<p><strong>实验结果：</strong></p>
+<figure>
+<img src="/img/开环系统.jpg" alt="开环系统" /><figcaption aria-hidden="true">开环系统</figcaption>
+</figure>
+<p><strong>闭环系统：</strong></p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%Speed Tachometer Example</span></span><br><span class="line">Ra=<span class="number">1</span>;Km=<span class="number">10</span>;J=<span class="number">2</span>;b=<span class="number">0.5</span>;Kb=<span class="number">0.1</span>;Ka=<span class="number">54</span>;Kt=<span class="number">1</span>;</span><br><span class="line">num1=[<span class="number">1</span>];den1=[J,b];sys1=tf(num1,den1);</span><br><span class="line">num2=[Ka*Kt];den2=[<span class="number">1</span>];sys2=tf(num2,den2);</span><br><span class="line">num3=[Kb];den3=[<span class="number">1</span>];sys3=tf(num3,den3);</span><br><span class="line">num4=[Km/Ra];den4=[<span class="number">1</span>];sys4=tf(num4,den4);</span><br><span class="line">sysa=parallel(sys2,sys3);</span><br><span class="line">sysb=series(sysa,sys4);</span><br><span class="line">sys_c=feedback(sys1,sysb);</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">sys_c=-sys_c</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">[yc,T]=step(sys_c);</span><br><span class="line"><span class="built_in">plot</span>(T,yc)</span><br><span class="line">title(<span class="string">&#x27;Closed-loop Disturbance Step Response&#x27;</span>)</span><br><span class="line">xlabel(<span class="string">&#x27;Time (sec)&#x27;</span>),ylabel(<span class="string">&#x27;\omega_c(rad/sec)&#x27;</span>),grid</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">yc(<span class="built_in">length</span>(T))</span><br></pre></td></tr></table></figure>
+<p><strong>实验结果：</strong></p>
+<figure>
+<img src="/img/闭环系统.jpg?%3C40%3E" alt="开环系统" /><figcaption aria-hidden="true">开环系统</figcaption>
+</figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -990,171 +1148,6 @@ maxZ = \sum_{j=1}^nc_jx_j\\\sum^n_{j=1}a_{ij}x_j = b_i, i =1,2,\ldots,n\\x_j \ge
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/08/Ooowee/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/img/cat.JPG">
-      <meta itemprop="name" content="Aston Jin">
-      <meta itemprop="description" content="某个人的个人主页罢了">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Aston-Jin">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/09/08/Ooowee/" class="post-title-link" itemprop="url">Ooowee</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-09-08 08:16:06" itemprop="dateCreated datePublished" datetime="2021-09-08T08:16:06+08:00">2021-09-08</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-30 16:22:44" itemprop="dateModified" datetime="2021-11-30T16:22:44+08:00">2021-11-30</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/" itemprop="url" rel="index"><span itemprop="name">金泓宇的碎碎念</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>But I guess things went downhill from there, started isolating myself from her. Used to tell her everything I was felling, but then I guess I stopped, 'cause I wanted her to love who she thought I was, not who I felt myself becoming. Ever think about how horrified the people we love would be, if they found out who we truly are?</p>
-<p>So we just dig ourselves deeper into our lies every day, ultimately hurting the only people brave enough to love us. Wish I didn't do that. Wish I was brave enough to love them back. I didn't know, maybe you should try it. We don't have as much time as we think. Ooowee.</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/06/newpapername-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/img/cat.JPG">
-      <meta itemprop="name" content="Aston Jin">
-      <meta itemprop="description" content="某个人的个人主页罢了">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Aston-Jin">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/09/06/newpapername-1/" class="post-title-link" itemprop="url">大三秋季第一天</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-09-06 18:53:44" itemprop="dateCreated datePublished" datetime="2021-09-06T18:53:44+08:00">2021-09-06</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-30 16:22:35" itemprop="dateModified" datetime="2021-11-30T16:22:35+08:00">2021-11-30</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/" itemprop="url" rel="index"><span itemprop="name">金泓宇的碎碎念</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>1.操作系统老佛爷真牛逼</p>
-<p>“作为大三的计算机同学，ubuntu都装不来，可以从学院11楼跳下去了”</p>
-<p>“以前我不能说，现在男生穿的像小鲜肉一样就滚出我的课堂”</p>
-<p>“要是你们觉得linux不好用，那是因为你们不配”</p>
-<p>2.被骗了 计算机图形学怎么要考试</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
     <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
@@ -1168,7 +1161,7 @@ maxZ = \sum_{j=1}^nc_jx_j\\\sum^n_{j=1}a_{ij}x_j = b_i, i =1,2,\ldots,n\\x_j \ge
 
 <div class="copyright">
   &copy; 2020 – 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-bug"></i>
   </span>

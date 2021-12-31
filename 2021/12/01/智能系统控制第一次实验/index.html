@@ -96,7 +96,7 @@
         <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">5</span></a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">21</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">23</span></a></li>
         <li class="menu-item menu-item-schedule"><a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a></li>
   </ul>
 </nav>
@@ -142,7 +142,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">23</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -258,13 +258,13 @@
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%Speed Tachometer Example</span></span><br><span class="line">Ra=<span class="number">1</span>;Km=<span class="number">10</span>;<span class="built_in">j</span>=<span class="number">2</span>;f=<span class="number">0.5</span>;Kb=<span class="number">0.1</span>;</span><br><span class="line">num1=[<span class="number">1</span>];den1=[<span class="built_in">j</span>,Kb];sys1=tf(num1,den1);</span><br><span class="line">num2=[Km*Kb/Ra];den2=[<span class="number">1</span>];sys2=tf(num2,den2);</span><br><span class="line">sys_o=feedback(sys1,sys2);</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">sys_o=-sys_o</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">[yo,T]=step(sys_o);</span><br><span class="line"><span class="built_in">plot</span>(T,yo)</span><br><span class="line">title(<span class="string">&#x27;Open-loop Disturbance Step Response&#x27;</span>)</span><br><span class="line">xlabel(<span class="string">&#x27;Time (sec)&#x27;</span>),ylabel(<span class="string">&#x27;\omega_o&#x27;</span>),grid</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">yo(<span class="built_in">length</span>(T))</span><br></pre></td></tr></table></figure>
 <p><strong>实验结果：</strong></p>
 <figure>
-<img src="/img/开环系统.jpg" alt="" /><figcaption>开环系统</figcaption>
+<img src="/img/开环系统.jpg" alt="开环系统" /><figcaption aria-hidden="true">开环系统</figcaption>
 </figure>
 <p><strong>闭环系统：</strong></p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%Speed Tachometer Example</span></span><br><span class="line">Ra=<span class="number">1</span>;Km=<span class="number">10</span>;J=<span class="number">2</span>;b=<span class="number">0.5</span>;Kb=<span class="number">0.1</span>;Ka=<span class="number">54</span>;Kt=<span class="number">1</span>;</span><br><span class="line">num1=[<span class="number">1</span>];den1=[J,b];sys1=tf(num1,den1);</span><br><span class="line">num2=[Ka*Kt];den2=[<span class="number">1</span>];sys2=tf(num2,den2);</span><br><span class="line">num3=[Kb];den3=[<span class="number">1</span>];sys3=tf(num3,den3);</span><br><span class="line">num4=[Km/Ra];den4=[<span class="number">1</span>];sys4=tf(num4,den4);</span><br><span class="line">sysa=parallel(sys2,sys3);</span><br><span class="line">sysb=series(sysa,sys4);</span><br><span class="line">sys_c=feedback(sys1,sysb);</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">sys_c=-sys_c</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">[yc,T]=step(sys_c);</span><br><span class="line"><span class="built_in">plot</span>(T,yc)</span><br><span class="line">title(<span class="string">&#x27;Closed-loop Disturbance Step Response&#x27;</span>)</span><br><span class="line">xlabel(<span class="string">&#x27;Time (sec)&#x27;</span>),ylabel(<span class="string">&#x27;\omega_c(rad/sec)&#x27;</span>),grid</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">yc(<span class="built_in">length</span>(T))</span><br></pre></td></tr></table></figure>
 <p><strong>实验结果：</strong></p>
 <figure>
-<img src="/img/闭环系统.jpg?%3C40%3E" alt="" /><figcaption>开环系统</figcaption>
+<img src="/img/闭环系统.jpg?%3C40%3E" alt="开环系统" /><figcaption aria-hidden="true">开环系统</figcaption>
 </figure>
 
     </div>
@@ -311,7 +311,7 @@
 
 <div class="copyright">
   &copy; 2020 – 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-bug"></i>
   </span>

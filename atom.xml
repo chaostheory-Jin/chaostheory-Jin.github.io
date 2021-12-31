@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-12-14T00:30:04.712Z</updated>
+  <updated>2021-12-31T16:21:04.351Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>新年快乐！</title>
+    <link href="http://example.com/2022/01/01/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90%EF%BC%81/"/>
+    <id>http://example.com/2022/01/01/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90%EF%BC%81/</id>
+    <published>2021-12-31T16:00:01.000Z</published>
+    <updated>2021-12-31T16:21:04.351Z</updated>
+    
+    <content type="html"><![CDATA[<p>新年快乐！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！</p><center><img src="/img/狗勾.JPG" width="50%" height="50%" /> 2022年啦</center>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;新年快乐！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/img/狗勾.JPG&quot; width=&quot;50%&quot; height=&quot;50%&quot; /&gt; 2022年啦
+&lt;/center&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>数据库第四周</title>
+    <link href="http://example.com/2021/12/20/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E5%9B%9B%E5%91%A8/"/>
+    <id>http://example.com/2021/12/20/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E5%9B%9B%E5%91%A8/</id>
+    <published>2021-12-20T02:04:24.000Z</published>
+    <updated>2021-12-20T03:40:42.214Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="数据库第二章数据库系统结构">数据库第二章——数据库系统结构</h3><p>三个世界：现实世界，信息世界，机器世界</p><p>数据库系统中数据的三级模式结构：</p><center><img src="/img/三级结构.PNG" width="50%" height="50%" /> 数据库系统中数据的三级模式结构</center><p>模式/内模式印象实现了 物理独立性</p><p>外模式/模式印象实现了 逻辑独立性</p><p>物理独立性+逻辑独立性 加起来叫数据独立性</p><center><img src="/img/用户访问数据的过程.PNG" width="50%" height="50%" /> 用户访问数据的过程</center><p>这个图有点问题，最后一步还有一个日志，就是用户的每一个操作都会记录在日志里面。</p><p>DBMS的主要功能：</p><p>1.定义功能：DMBS提供DDL来定义模式，外模式和内模式</p><p>2.操纵功能：增删查改</p><p>3.保护功能：数据库的恢复，并发控制，完整性和安全性</p><p>4.维护功能 5.数据字典</p><p>DBS的组成（用户+DBMS+DB）：数据库，硬件，软件，数据库管理员（DBA）</p><h3 id="数据库第三章"><strong>数据库第三章</strong></h3><p>关系模式的完整性规则：</p><p>1.实体完整性规则：实体主键属性不能为空</p><p>2.参照完整性规则：不引用不存在的实体，要么就为空或者参照关系中的某个主键</p><p>3.用户定义的完整性规则：由用户的应用环境决定</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;数据库第二章数据库系统结构&quot;&gt;数据库第二章——数据库系统结构&lt;/h3&gt;
+&lt;p&gt;三个世界：现实世界，信息世界，机器世界&lt;/p&gt;
+&lt;p&gt;数据库系统中数据的三级模式结构：&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/img/三级结构.PNG&quot; width=&quot;</summary>
+      
+    
+    
+    
+    
+    <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
+    
+    <category term="数据库原理" scheme="http://example.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>起不出标题诶</title>
@@ -72,7 +124,7 @@
     <link href="http://example.com/2021/12/13/%E7%9F%AB%E6%83%85/"/>
     <id>http://example.com/2021/12/13/%E7%9F%AB%E6%83%85/</id>
     <published>2021-12-13T00:33:42.000Z</published>
-    <updated>2021-12-13T01:32:17.150Z</updated>
+    <updated>2021-12-31T16:23:26.522Z</updated>
     
     <content type="html"><![CDATA[<p>金泓宇又在院长的课上摸鱼了，试试看这个<span class="math inline">\(a\beta\)</span>好不好用叭，要是不好用也不想修了呢。昨天晚上矫情的有一丢丢晚，想想不知道是不是坏事，但是坏的一定是，没什么人会喜欢矫情的金泓宇。在这里记两句话叭，第一句本不该在这，但要送给一些人，也许假以时日会有用。某先行一步，俟诸公锒铛之九泉，此日不远。另外一句要送给金泓宇自己，我这个獦獠人，也想学佛吗。</p><center><img src="/img/mor.JPG" width="50%" height="50%" /> 好像是早上</center>]]></content>
     
@@ -174,9 +226,9 @@ f(x)=w_1x_1+w_2x_2+\ldots+w_dx_d+b
     <link href="http://example.com/2021/12/06/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%BA%8C%E5%91%A8/"/>
     <id>http://example.com/2021/12/06/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%BA%8C%E5%91%A8/</id>
     <published>2021-12-06T02:01:18.000Z</published>
-    <updated>2021-12-06T03:30:02.209Z</updated>
+    <updated>2021-12-15T08:36:10.165Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="数据查询接上节课">数据查询（接上节课）：</h4><p>带有谓词in的子查询：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s,sc <span class="keyword">WHERE</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">AND</span> cno<span class="operator">=</span><span class="string">&#x27;c2&#x27;</span>;</span><br><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> sno <span class="keyword">in</span> (<span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> cno<span class="operator">=</span><span class="string">&#x27;c2&#x27;</span>);<span class="operator">/</span><span class="operator">/</span>嵌套查询先做里面的<span class="keyword">SELECT</span></span><br></pre></td></tr></table></figure><p>带有ANY和ALL的比较子查询：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> s.sno,sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> sec<span class="operator">=</span><span class="string">&#x27;男&#x27;</span> <span class="keyword">AND</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">GROUP</span> <span class="keyword">BY</span> s.sno <span class="keyword">HAVING</span> <span class="built_in">AVG</span>(grade)<span class="operator">&gt;</span><span class="keyword">ALL</span> (<span class="keyword">SELECT</span> grade <span class="keyword">FROM</span> s,sc <span class="keyword">WHERE</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">AND</span> sex<span class="operator">=</span><span class="string">&#x27;女&#x27;</span>)<span class="operator">/</span><span class="operator">/</span>找男同学，平均分大于所有女同学的分</span><br></pre></td></tr></table></figure><p>带有存在量词EXISTS子查询：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> sno <span class="keyword">NOT</span> <span class="keyword">IN</span> (<span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> cno<span class="operator">=</span><span class="string">&#x27;c2&#x27;</span>);</span><br><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> cno<span class="operator">=</span><span class="string">&#x27;c2&#x27;</span> <span class="keyword">AND</span> s.sno<span class="operator">=</span>sc.sno);<span class="operator">/</span><span class="operator">/</span>存在量词是先做外面再做里面的</span><br></pre></td></tr></table></figure><p><strong>SQL语言只有存在量词，不支持全称量词：</strong></p><p>查询所有学生都选修的课程号和课程名==没有学生不选修的课程号和课程名 <span class="math display">\[(\forall x)P\equiv\neg(\exist x)\neg P\]</span></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> cno,cname <span class="keyword">FROM</span> c <span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> sno<span class="operator">=</span>s.sno <span class="keyword">AND</span> cno<span class="operator">=</span>c.cno))<span class="operator">/</span><span class="operator">/</span>不存在一个学生不选</span><br></pre></td></tr></table></figure><p><strong>SQL不支持逻辑蕴含：</strong></p><p>求选修学号为S3的学生所修全部课程的学生号码 <span class="math display">\[\begin{split} (\forall c_y)(p \rightarrow q) \\ \equiv \neg(\exist c_y)\neg(p \rightarrow q) \\ \equiv \neg(\exist c_y)\neg(\neg p \lor q) \\ \equiv \neg(\exist c_y)( p \land \neg q) \end{split}\]</span></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc x <span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXiSTS</span> (<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> sc y <span class="keyword">WHERE</span> sno<span class="operator">=</span><span class="string">&#x27;s3&#x27;</span> <span class="keyword">AND</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="keyword">FROM</span> sc z <span class="keyword">WHERE</span> sno<span class="operator">=</span>x.sno <span class="keyword">and</span> cno<span class="operator">=</span>y.cno))</span><br></pre></td></tr></table></figure><h3 id="sql的数据操作">SQL的数据操作：</h3><h4 id="数据插入">1.数据插入</h4><h4 id="数据删除">2.数据删除</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span><span class="operator">&lt;</span>表名<span class="operator">&gt;</span> <span class="keyword">WHERE</span></span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> sno <span class="keyword">NOT</span> <span class="keyword">IN</span> (<span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc)</span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> cno <span class="keyword">IN</span> (<span class="keyword">SELECT</span> cno <span class="keyword">FROM</span> c <span class="keyword">WHERE</span> cname<span class="operator">=</span><span class="string">&#x27;数据库原理&#x27;</span>)</span><br></pre></td></tr></table></figure><h4 id="数据修改">3.数据修改</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">UPDATE<span class="operator">&lt;</span>表名<span class="operator">&gt;</span> <span class="keyword">SET</span><span class="operator">&lt;</span>列名<span class="operator">&gt;=</span><span class="operator">&lt;</span>表达式<span class="operator">&gt;</span></span><br><span class="line">UPDATE sc <span class="keyword">SET</span> grade<span class="operator">=</span>grade<span class="operator">*</span><span class="number">1.04</span> <span class="keyword">WHERE</span> grade<span class="operator">&gt;=</span><span class="number">70</span></span><br><span class="line">UPDATE sc <span class="keyword">SET</span> grade<span class="operator">=</span>grade<span class="operator">*</span><span class="number">1.05</span> <span class="keyword">WHERE</span> grade<span class="operator">&lt;</span><span class="number">70</span></span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h4 id="数据查询接上节课">数据查询（接上节课）：</h4><p>带有谓词in的子查询：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s,sc <span class="keyword">WHERE</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">AND</span> cno<span class="operator">=</span><span class="string">&#x27;c2&#x27;</span>;</span><br><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> sno <span class="keyword">in</span> (<span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> cno<span class="operator">=</span><span class="string">&#x27;c2&#x27;</span>);<span class="operator">/</span><span class="operator">/</span>嵌套查询先做里面的<span class="keyword">SELECT</span></span><br></pre></td></tr></table></figure><p>带有ANY和ALL的比较子查询：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> s.sno,sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> sec<span class="operator">=</span><span class="string">&#x27;男&#x27;</span> <span class="keyword">AND</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">GROUP</span> <span class="keyword">BY</span> s.sno <span class="keyword">HAVING</span> <span class="built_in">AVG</span>(grade)<span class="operator">&gt;</span><span class="keyword">ALL</span> (<span class="keyword">SELECT</span> grade <span class="keyword">FROM</span> s,sc <span class="keyword">WHERE</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">AND</span> sex<span class="operator">=</span><span class="string">&#x27;女&#x27;</span>)<span class="operator">/</span><span class="operator">/</span>找男同学，平均分大于所有女同学的分</span><br></pre></td></tr></table></figure><p>带有存在量词EXISTS子查询：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> sno <span class="keyword">NOT</span> <span class="keyword">IN</span> (<span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> cno<span class="operator">=</span><span class="string">&#x27;c2&#x27;</span>);</span><br><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> cno<span class="operator">=</span><span class="string">&#x27;c2&#x27;</span> <span class="keyword">AND</span> s.sno<span class="operator">=</span>sc.sno);<span class="operator">/</span><span class="operator">/</span>存在量词是先做外面再做里面的</span><br></pre></td></tr></table></figure><p><strong>SQL语言只有存在量词，不支持全称量词：</strong></p><p>查询所有学生都选修的课程号和课程名==没有学生不选修的课程号和课程名 <span class="math display">\[(\forall x)P\equiv\neg(\exist x)\neg P\]</span></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> cno,cname <span class="keyword">FROM</span> c <span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> sno<span class="operator">=</span>s.sno <span class="keyword">AND</span> cno<span class="operator">=</span>c.cno))<span class="operator">/</span><span class="operator">/</span>不存在一个学生不选</span><br></pre></td></tr></table></figure><p><strong>SQL不支持逻辑蕴含：</strong></p><p>求选修学号为S3的学生所修全部课程的学生号码 <span class="math display">\[(\forall c_y)(p \rightarrow q) \\ \equiv \neg(\exist c_y)\neg(p \rightarrow q) \\ \equiv \neg(\exist c_y)\neg(\neg p \lor q) \\ \equiv \neg(\exist c_y)( p \land \neg q)\]</span></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc x <span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXiSTS</span> (<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> sc y <span class="keyword">WHERE</span> sno<span class="operator">=</span><span class="string">&#x27;s3&#x27;</span> <span class="keyword">AND</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="keyword">FROM</span> sc z <span class="keyword">WHERE</span> sno<span class="operator">=</span>x.sno <span class="keyword">and</span> cno<span class="operator">=</span>y.cno))</span><br></pre></td></tr></table></figure><h3 id="sql的数据操作">SQL的数据操作：</h3><h4 id="数据插入">1.数据插入</h4><h4 id="数据删除">2.数据删除</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span><span class="operator">&lt;</span>表名<span class="operator">&gt;</span> <span class="keyword">WHERE</span></span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> sno <span class="keyword">NOT</span> <span class="keyword">IN</span> (<span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc)</span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> cno <span class="keyword">IN</span> (<span class="keyword">SELECT</span> cno <span class="keyword">FROM</span> c <span class="keyword">WHERE</span> cname<span class="operator">=</span><span class="string">&#x27;数据库原理&#x27;</span>)</span><br></pre></td></tr></table></figure><h4 id="数据修改">3.数据修改</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">UPDATE<span class="operator">&lt;</span>表名<span class="operator">&gt;</span> <span class="keyword">SET</span><span class="operator">&lt;</span>列名<span class="operator">&gt;=</span><span class="operator">&lt;</span>表达式<span class="operator">&gt;</span></span><br><span class="line">UPDATE sc <span class="keyword">SET</span> grade<span class="operator">=</span>grade<span class="operator">*</span><span class="number">1.04</span> <span class="keyword">WHERE</span> grade<span class="operator">&gt;=</span><span class="number">70</span></span><br><span class="line">UPDATE sc <span class="keyword">SET</span> grade<span class="operator">=</span>grade<span class="operator">*</span><span class="number">1.05</span> <span class="keyword">WHERE</span> grade<span class="operator">&lt;</span><span class="number">70</span></span><br></pre></td></tr></table></figure>]]></content>
     
     
       
@@ -254,7 +306,7 @@ f(x)=w_1x_1+w_2x_2+\ldots+w_dx_d+b
     <published>2021-12-01T07:53:54.000Z</published>
     <updated>2021-12-01T08:28:58.777Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>开环系统和闭环系统的抗扰动性能对比</strong></p><p>实验目的：设输入电压为0时，扰动信号Td(s)=1/s,分别比较在无转速计开环控制状态下和有转速计闭环控制状态下电机输出转速稳定误差。</p><p><strong>开环系统：</strong></p><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%Speed Tachometer Example</span></span><br><span class="line">Ra=<span class="number">1</span>;Km=<span class="number">10</span>;<span class="built_in">j</span>=<span class="number">2</span>;f=<span class="number">0.5</span>;Kb=<span class="number">0.1</span>;</span><br><span class="line">num1=[<span class="number">1</span>];den1=[<span class="built_in">j</span>,Kb];sys1=tf(num1,den1);</span><br><span class="line">num2=[Km*Kb/Ra];den2=[<span class="number">1</span>];sys2=tf(num2,den2);</span><br><span class="line">sys_o=feedback(sys1,sys2);</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">sys_o=-sys_o</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">[yo,T]=step(sys_o);</span><br><span class="line"><span class="built_in">plot</span>(T,yo)</span><br><span class="line">title(<span class="string">&#x27;Open-loop Disturbance Step Response&#x27;</span>)</span><br><span class="line">xlabel(<span class="string">&#x27;Time (sec)&#x27;</span>),ylabel(<span class="string">&#x27;\omega_o&#x27;</span>),grid</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">yo(<span class="built_in">length</span>(T))</span><br></pre></td></tr></table></figure><p><strong>实验结果：</strong></p><figure><img src="/img/开环系统.jpg" alt="" /><figcaption>开环系统</figcaption></figure><p><strong>闭环系统：</strong></p><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%Speed Tachometer Example</span></span><br><span class="line">Ra=<span class="number">1</span>;Km=<span class="number">10</span>;J=<span class="number">2</span>;b=<span class="number">0.5</span>;Kb=<span class="number">0.1</span>;Ka=<span class="number">54</span>;Kt=<span class="number">1</span>;</span><br><span class="line">num1=[<span class="number">1</span>];den1=[J,b];sys1=tf(num1,den1);</span><br><span class="line">num2=[Ka*Kt];den2=[<span class="number">1</span>];sys2=tf(num2,den2);</span><br><span class="line">num3=[Kb];den3=[<span class="number">1</span>];sys3=tf(num3,den3);</span><br><span class="line">num4=[Km/Ra];den4=[<span class="number">1</span>];sys4=tf(num4,den4);</span><br><span class="line">sysa=parallel(sys2,sys3);</span><br><span class="line">sysb=series(sysa,sys4);</span><br><span class="line">sys_c=feedback(sys1,sysb);</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">sys_c=-sys_c</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">[yc,T]=step(sys_c);</span><br><span class="line"><span class="built_in">plot</span>(T,yc)</span><br><span class="line">title(<span class="string">&#x27;Closed-loop Disturbance Step Response&#x27;</span>)</span><br><span class="line">xlabel(<span class="string">&#x27;Time (sec)&#x27;</span>),ylabel(<span class="string">&#x27;\omega_c(rad/sec)&#x27;</span>),grid</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">yc(<span class="built_in">length</span>(T))</span><br></pre></td></tr></table></figure><p><strong>实验结果：</strong></p><figure><img src="/img/闭环系统.jpg?%3C40%3E" alt="" /><figcaption>开环系统</figcaption></figure>]]></content>
+    <content type="html"><![CDATA[<p><strong>开环系统和闭环系统的抗扰动性能对比</strong></p><p>实验目的：设输入电压为0时，扰动信号Td(s)=1/s,分别比较在无转速计开环控制状态下和有转速计闭环控制状态下电机输出转速稳定误差。</p><p><strong>开环系统：</strong></p><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%Speed Tachometer Example</span></span><br><span class="line">Ra=<span class="number">1</span>;Km=<span class="number">10</span>;<span class="built_in">j</span>=<span class="number">2</span>;f=<span class="number">0.5</span>;Kb=<span class="number">0.1</span>;</span><br><span class="line">num1=[<span class="number">1</span>];den1=[<span class="built_in">j</span>,Kb];sys1=tf(num1,den1);</span><br><span class="line">num2=[Km*Kb/Ra];den2=[<span class="number">1</span>];sys2=tf(num2,den2);</span><br><span class="line">sys_o=feedback(sys1,sys2);</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">sys_o=-sys_o</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">[yo,T]=step(sys_o);</span><br><span class="line"><span class="built_in">plot</span>(T,yo)</span><br><span class="line">title(<span class="string">&#x27;Open-loop Disturbance Step Response&#x27;</span>)</span><br><span class="line">xlabel(<span class="string">&#x27;Time (sec)&#x27;</span>),ylabel(<span class="string">&#x27;\omega_o&#x27;</span>),grid</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">yo(<span class="built_in">length</span>(T))</span><br></pre></td></tr></table></figure><p><strong>实验结果：</strong></p><figure><img src="/img/开环系统.jpg" alt="开环系统" /><figcaption aria-hidden="true">开环系统</figcaption></figure><p><strong>闭环系统：</strong></p><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%Speed Tachometer Example</span></span><br><span class="line">Ra=<span class="number">1</span>;Km=<span class="number">10</span>;J=<span class="number">2</span>;b=<span class="number">0.5</span>;Kb=<span class="number">0.1</span>;Ka=<span class="number">54</span>;Kt=<span class="number">1</span>;</span><br><span class="line">num1=[<span class="number">1</span>];den1=[J,b];sys1=tf(num1,den1);</span><br><span class="line">num2=[Ka*Kt];den2=[<span class="number">1</span>];sys2=tf(num2,den2);</span><br><span class="line">num3=[Kb];den3=[<span class="number">1</span>];sys3=tf(num3,den3);</span><br><span class="line">num4=[Km/Ra];den4=[<span class="number">1</span>];sys4=tf(num4,den4);</span><br><span class="line">sysa=parallel(sys2,sys3);</span><br><span class="line">sysb=series(sysa,sys4);</span><br><span class="line">sys_c=feedback(sys1,sysb);</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">sys_c=-sys_c</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">[yc,T]=step(sys_c);</span><br><span class="line"><span class="built_in">plot</span>(T,yc)</span><br><span class="line">title(<span class="string">&#x27;Closed-loop Disturbance Step Response&#x27;</span>)</span><br><span class="line">xlabel(<span class="string">&#x27;Time (sec)&#x27;</span>),ylabel(<span class="string">&#x27;\omega_c(rad/sec)&#x27;</span>),grid</span><br><span class="line"><span class="comment">%</span></span><br><span class="line">yc(<span class="built_in">length</span>(T))</span><br></pre></td></tr></table></figure><p><strong>实验结果：</strong></p><figure><img src="/img/闭环系统.jpg?%3C40%3E" alt="开环系统" /><figcaption aria-hidden="true">开环系统</figcaption></figure>]]></content>
     
     
       
@@ -504,62 +556,6 @@ f(x)=w_1x_1+w_2x_2+\ldots+w_dx_d+b
     
     
     <category term="做着玩呢" scheme="http://example.com/tags/%E5%81%9A%E7%9D%80%E7%8E%A9%E5%91%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ooowee</title>
-    <link href="http://example.com/2021/09/08/Ooowee/"/>
-    <id>http://example.com/2021/09/08/Ooowee/</id>
-    <published>2021-09-08T00:16:06.000Z</published>
-    <updated>2021-11-30T08:22:44.001Z</updated>
-    
-    <content type="html"><![CDATA[<p>But I guess things went downhill from there, started isolating myself from her. Used to tell her everything I was felling, but then I guess I stopped, 'cause I wanted her to love who she thought I was, not who I felt myself becoming. Ever think about how horrified the people we love would be, if they found out who we truly are?</p><p>So we just dig ourselves deeper into our lies every day, ultimately hurting the only people brave enough to love us. Wish I didn't do that. Wish I was brave enough to love them back. I didn't know, maybe you should try it. We don't have as much time as we think. Ooowee.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;But I guess things went downhill from there, started isolating myself from her. Used to tell her everything I was felling, but then I gue</summary>
-      
-    
-    
-    
-    <category term="金泓宇的碎碎念" scheme="http://example.com/categories/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-    
-    
-    <category term="金泓宇的碎碎念" scheme="http://example.com/tags/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-    
-    <category term="emo" scheme="http://example.com/tags/emo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大三秋季第一天</title>
-    <link href="http://example.com/2021/09/06/newpapername-1/"/>
-    <id>http://example.com/2021/09/06/newpapername-1/</id>
-    <published>2021-09-06T10:53:44.000Z</published>
-    <updated>2021-11-30T08:22:35.385Z</updated>
-    
-    <content type="html"><![CDATA[<p>1.操作系统老佛爷真牛逼</p><p>“作为大三的计算机同学，ubuntu都装不来，可以从学院11楼跳下去了”</p><p>“以前我不能说，现在男生穿的像小鲜肉一样就滚出我的课堂”</p><p>“要是你们觉得linux不好用，那是因为你们不配”</p><p>2.被骗了 计算机图形学怎么要考试</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;1.操作系统老佛爷真牛逼&lt;/p&gt;
-&lt;p&gt;“作为大三的计算机同学，ubuntu都装不来，可以从学院11楼跳下去了”&lt;/p&gt;
-&lt;p&gt;“以前我不能说，现在男生穿的像小鲜肉一样就滚出我的课堂”&lt;/p&gt;
-&lt;p&gt;“要是你们觉得linux不好用，那是因为你们不配”&lt;/p&gt;
-&lt;p&gt;</summary>
-      
-    
-    
-    
-    <category term="金泓宇的碎碎念" scheme="http://example.com/categories/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-    
-    
-    <category term="金泓宇的碎碎念" scheme="http://example.com/tags/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-    
-    <category term="上海大学" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6/"/>
     
   </entry>
   

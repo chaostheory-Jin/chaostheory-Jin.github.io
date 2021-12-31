@@ -29,7 +29,7 @@
 <meta property="og:description" content="数据查询（接上节课）： 带有谓词in的子查询： 12SELECT sname FROM s,sc WHERE s.sno&#x3D;sc.sno AND cno&#x3D;&amp;#x27;c2&amp;#x27;;SELECT sname FROM s WHERE sno in (SELECT sno FROM sc WHERE cno&#x3D;&amp;#x27;c2&amp;#x27;);&#x2F;&#x2F;嵌套查询先做里面的SELECT 带有ANY和ALL">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-12-06T02:01:18.000Z">
-<meta property="article:modified_time" content="2021-12-06T03:30:02.209Z">
+<meta property="article:modified_time" content="2021-12-15T08:36:10.165Z">
 <meta property="article:author" content="Aston Jin">
 <meta property="article:tag" content="上海大学倒霉课程">
 <meta property="article:tag" content="数据库原理">
@@ -93,7 +93,7 @@
         <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">5</span></a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">21</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">23</span></a></li>
         <li class="menu-item menu-item-schedule"><a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a></li>
   </ul>
 </nav>
@@ -140,7 +140,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">23</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -235,10 +235,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-12-06 10:01:18 / Modified: 11:30:02" itemprop="dateCreated datePublished" datetime="2021-12-06T10:01:18+08:00">2021-12-06</time>
+      <time title="Created: 2021-12-06 10:01:18" itemprop="dateCreated datePublished" datetime="2021-12-06T10:01:18+08:00">2021-12-06</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-15 16:36:10" itemprop="dateModified" datetime="2021-12-15T16:36:10+08:00">2021-12-15</time>
+      </span>
 
   
 </div>
@@ -264,7 +270,7 @@
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> cno,cname <span class="keyword">FROM</span> c <span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> sno<span class="operator">=</span>s.sno <span class="keyword">AND</span> cno<span class="operator">=</span>c.cno))<span class="operator">/</span><span class="operator">/</span>不存在一个学生不选</span><br></pre></td></tr></table></figure>
 <p><strong>SQL不支持逻辑蕴含：</strong></p>
 <p>求选修学号为S3的学生所修全部课程的学生号码 <span class="math display">\[
-\begin{split} (\forall c_y)(p \rightarrow q) \\ \equiv \neg(\exist c_y)\neg(p \rightarrow q) \\ \equiv \neg(\exist c_y)\neg(\neg p \lor q) \\ \equiv \neg(\exist c_y)( p \land \neg q) \end{split}
+(\forall c_y)(p \rightarrow q) \\ \equiv \neg(\exist c_y)\neg(p \rightarrow q) \\ \equiv \neg(\exist c_y)\neg(\neg p \lor q) \\ \equiv \neg(\exist c_y)( p \land \neg q)
 \]</span></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc x <span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXiSTS</span> (<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> sc y <span class="keyword">WHERE</span> sno<span class="operator">=</span><span class="string">&#x27;s3&#x27;</span> <span class="keyword">AND</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="keyword">FROM</span> sc z <span class="keyword">WHERE</span> sno<span class="operator">=</span>x.sno <span class="keyword">and</span> cno<span class="operator">=</span>y.cno))</span><br></pre></td></tr></table></figure>
 <h3 id="sql的数据操作">SQL的数据操作：</h3>
@@ -318,7 +324,7 @@
 
 <div class="copyright">
   &copy; 2020 – 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-bug"></i>
   </span>
