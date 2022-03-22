@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-12-31T16:21:04.351Z</updated>
+  <updated>2022-03-22T12:36:19.487Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>想爷爷了</title>
+    <link href="http://example.com/2022/03/22/%E6%83%B3%E7%88%B7%E7%88%B7%E4%BA%86/"/>
+    <id>http://example.com/2022/03/22/%E6%83%B3%E7%88%B7%E7%88%B7%E4%BA%86/</id>
+    <published>2022-03-22T12:32:24.000Z</published>
+    <updated>2022-03-22T12:36:19.487Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>所以是根本没有办法用事情都过去了来开脱的，因为再怎么想都不会过去。所以其实是金泓宇根本没有意识到，根本没有往这方面去想。就，怎么会这样呢。如果早一点意识到，就，就算没办法，也有很多机会把话讲完。就不至于去干很多没有意义的事情。就至少不会是现在这样。</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;pre&gt;&lt;code&gt;所以是根本没有办法用事情都过去了来开脱的，因为再怎么想都不会过去。所以其实是金泓宇根本没有意识到，根本没有往这方面去想。就，怎么会这样呢。如果早一点意识到，就，就算没办法，也有很多机会把话讲完。就不至于去干很多没有意义的事情。就至少不会是现在这样。&lt;/cod</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>新年快乐！</title>
@@ -530,32 +550,6 @@ f(x)=w_1x_1+w_2x_2+\ldots+w_dx_d+b
     <category term="老佛爷的操作系统" scheme="http://example.com/tags/%E8%80%81%E4%BD%9B%E7%88%B7%E7%9A%84%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
     <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>donuts math</title>
-    <link href="http://example.com/2021/09/09/math/"/>
-    <id>http://example.com/2021/09/09/math/</id>
-    <published>2021-09-08T23:57:53.000Z</published>
-    <updated>2021-11-30T08:20:23.167Z</updated>
-    
-    <content type="html"><![CDATA[<p>This is just a DONUT, which generates a 'code' donut on screen.</p><p>Here authors fantastic code:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">            k;double sin()</span><br><span class="line">         ,cos();main()&#123;float A=</span><br><span class="line">       0,B=0,i,j,z[1760];char b[</span><br><span class="line">     1760];printf(&quot;\x1b[2J&quot;);for(;;</span><br><span class="line">  )&#123;memset(b,32,1760);memset(z,0,7040)</span><br><span class="line">  ;for(j=0;6.28&gt;j;j+=0.07)for(i=0;6.28</span><br><span class="line"> &gt;i;i+=0.02)&#123;float c=sin(i),d=cos(j),e=</span><br><span class="line"> sin(A),f=sin(j),g=cos(A),h=d+2,D=1/(c*</span><br><span class="line"> h*e+f*g+5),l=cos      (i),m=cos(B),n=s\</span><br><span class="line">in(B),t=c*h*g-f*        e;int x=40+30*D*</span><br><span class="line">(l*h*m-t*n),y=            12+15*D*(l*h*n</span><br><span class="line">+t*m),o=x+80*y,          N=8*((f*e-c*d*g</span><br><span class="line"> )*m-c*d*e-f*g-l        *d*n);if(22&gt;y&amp;&amp;</span><br><span class="line"> y&gt;0&amp;&amp;x&gt;0&amp;&amp;80&gt;x&amp;&amp;D&gt;z[o])&#123;z[o]=D;;;b[o]=</span><br><span class="line"> &quot;.,-~:;=!*#$@&quot;[N&gt;0?N:0];&#125;&#125;/*#****!!-*/</span><br><span class="line">  printf(&quot;\x1b[H&quot;);for(k=0;1761&gt;k;k++)</span><br><span class="line">   putchar(k%80?b[k]:10);A+=0.04;B+=</span><br><span class="line">     0.02;&#125;&#125;/*****####*******!!=;:~</span><br><span class="line">       ~::==!!!**********!!!==::-</span><br><span class="line">         .,~~;;;========;;;:~-.</span><br><span class="line">             ..,--------,*/</span><br></pre></td></tr></table></figure><p>origin work:https://www.a1k0n.net/2011/07/20/donut-math.html</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;This is just a DONUT, which generates a &#39;code&#39; donut on screen.&lt;/p&gt;
-&lt;p&gt;Here authors fantastic code:&lt;/p&gt;
-&lt;figure class=&quot;highlight plaint</summary>
-      
-    
-    
-    
-    <category term="做着玩呢" scheme="http://example.com/categories/%E5%81%9A%E7%9D%80%E7%8E%A9%E5%91%A2/"/>
-    
-    
-    <category term="做着玩呢" scheme="http://example.com/tags/%E5%81%9A%E7%9D%80%E7%8E%A9%E5%91%A2/"/>
     
   </entry>
   
