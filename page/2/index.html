@@ -89,7 +89,7 @@
         <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">5</span></a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">24</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">25</span></a></li>
         <li class="menu-item menu-item-schedule"><a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a></li>
   </ul>
 </nav>
@@ -135,7 +135,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-count">25</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -206,6 +206,99 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/06/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E5%91%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/cat.JPG">
+      <meta itemprop="name" content="Aston Jin">
+      <meta itemprop="description" content="某个人的个人主页罢了">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Aston-Jin">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/12/06/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E5%91%A8/" class="post-title-link" itemprop="url">机器学习第二章</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-12-06 21:05:32 / Modified: 23:10:03" itemprop="dateCreated datePublished" datetime="2021-12-06T21:05:32+11:00">2021-12-06</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="第二章-模型评估与选择">第二章 模型评估与选择</h3>
+<h4 id="经验误差与过拟合"><strong>经验误差与过拟合：</strong></h4>
+<p>样本误差，测试误差，泛化误差</p>
+<p>过拟合：将训练样本本身的特点当作所有样本的一般性质，导致泛化性能下降</p>
+<p>目前的解决方法：优化目标加正则项、early stop</p>
+<h4 id="评估方法"><strong>评估方法：</strong></h4>
+<p>我们假设测试集是从样本真实分布中独立采样获得，将测试集上的测试误差作为泛化误差的近似，所以测试集和训练集要尽可能的互斥。</p>
+<p>通常将m个样本的数据集D，拆分成训练集S和测试集T</p>
+<p>1.留出法 直接将数据集划分为两个互斥集合，测试/训练集的数据分布要尽量保持一致。一般做若干次随机划分，重复实验取平均值</p>
+<p>2.交叉验证法</p>
+<p>将数据集划分成k个大小相同的互斥子集。每次用k-1个子集的并集作为训练集，余下的子集作为测试集，最终返回k个测试结果的均值。</p>
+<p>留一法：交叉验证的特例。m个样本只有唯一方法划分为m个子集——每个子集包含一个样本。</p>
+<p>3.自助法</p>
+<p>每次在D里选一个样本，放到D‘，然后放回。重复执行m次，获得一个D’。</p>
+<h4 id="性能量度"><strong>性能量度：</strong></h4>
+<p>错误率和精度：加起来等于1 。错误率就是错的占样本的比例，精度就是对的占样本的比例。</p>
+<p><strong>混淆矩阵</strong>：TP（真正例）+FP（假正例）+TN（真反例）+FN（假反例）=样例总数</p>
+<p>查准率和查全率：P=TP/(TP+FP)查准率 R=TP/(TP+FN)查全率</p>
+<p>以查准率为Y轴查全率为X轴，做P-R曲线。哪个包住了哪一个就是效果更好。在两个曲线有交叉的情况下，可以计算面积。或者考虑在某一个特定的点下，查准率和查全率的指标。</p>
+<p><strong>“平衡点”</strong>：平衡点是曲线上查询率=查全率时的取值。平衡点谁更高。哪个学习器就更好。</p>
+<p>F1度量：F1=(2xTP)/(样例总数+TP-TN) <span class="math display">\[
+F_{\beta}=\frac{(1+\beta^2)\times P \times R}{(\beta^2\times P)+R}
+\]</span> <strong>ROC与AUC：</strong>很多学习器的测试样本产生一个实值或者概率预测，然后将这个预测值和一个分类阈值进行比较，大于则为正例，小于则为反例。ROC曲线的纵轴是真正例率（TPR True Positive Rate），横轴是假正例率（FPR false Positive Rate）。</p>
+<p>AUC值是ROC曲线下的面积，即Area Under ROC Curve。根据ROC的画法，AUC的计算可以估算为矩形面积: <span class="math display">\[
+AUC=\frac{1}{2}\sum^{m-1}_{i=1}(x_{i+1}-x_i).(y_i+y_{i+1})
+\]</span></p>
+<h4 id="比较检验"><strong>比较检验：</strong></h4>
+<p><strong>假设检验：</strong>假设检验中的“假设”是对学习器泛化错误率分布的某种判断或猜想。例如a&lt;a0。我们可以使用二项检验或者t检验。</p>
+<p>交叉验证t检验，5x2交叉验证是做五次2折交叉验证。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/06/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%BA%8C%E5%91%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -230,14 +323,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-12-06 10:01:18" itemprop="dateCreated datePublished" datetime="2021-12-06T10:01:18+08:00">2021-12-06</time>
+      <time title="Created: 2021-12-06 10:01:18" itemprop="dateCreated datePublished" datetime="2021-12-06T10:01:18+11:00">2021-12-06</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-15 16:36:10" itemprop="dateModified" datetime="2021-12-15T16:36:10+08:00">2021-12-15</time>
+        <time title="Modified: 2022-04-23 10:07:37" itemprop="dateModified" datetime="2022-04-23T10:07:37+10:00">2022-04-23</time>
       </span>
 
   
@@ -254,7 +347,7 @@
 <p>带有谓词in的子查询：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s,sc <span class="keyword">WHERE</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">AND</span> cno<span class="operator">=</span><span class="string">&#x27;c2&#x27;</span>;</span><br><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> sno <span class="keyword">in</span> (<span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> cno<span class="operator">=</span><span class="string">&#x27;c2&#x27;</span>);<span class="operator">/</span><span class="operator">/</span>嵌套查询先做里面的<span class="keyword">SELECT</span></span><br></pre></td></tr></table></figure>
 <p>带有ANY和ALL的比较子查询：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> s.sno,sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> sec<span class="operator">=</span><span class="string">&#x27;男&#x27;</span> <span class="keyword">AND</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">GROUP</span> <span class="keyword">BY</span> s.sno <span class="keyword">HAVING</span> <span class="built_in">AVG</span>(grade)<span class="operator">&gt;</span><span class="keyword">ALL</span> (<span class="keyword">SELECT</span> grade <span class="keyword">FROM</span> s,sc <span class="keyword">WHERE</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">AND</span> sex<span class="operator">=</span><span class="string">&#x27;女&#x27;</span>)<span class="operator">/</span><span class="operator">/</span>找男同学，平均分大于所有女同学的分</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> s.sno,sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> sex<span class="operator">=</span><span class="string">&#x27;男&#x27;</span> <span class="keyword">AND</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">GROUP</span> <span class="keyword">BY</span> s.sno <span class="keyword">HAVING</span> <span class="built_in">AVG</span>(grade)<span class="operator">&gt;</span><span class="keyword">ALL</span> (<span class="keyword">SELECT</span> grade <span class="keyword">FROM</span> s,sc <span class="keyword">WHERE</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">AND</span> sex<span class="operator">=</span><span class="string">&#x27;女&#x27;</span>)<span class="operator">/</span><span class="operator">/</span>找男同学，平均分大于所有女同学的分</span><br></pre></td></tr></table></figure>
 <p>带有存在量词EXISTS子查询：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> sno <span class="keyword">NOT</span> <span class="keyword">IN</span> (<span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> cno<span class="operator">=</span><span class="string">&#x27;c2&#x27;</span>);</span><br><span class="line"><span class="keyword">SELECT</span> sname <span class="keyword">FROM</span> s <span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> sc <span class="keyword">WHERE</span> cno<span class="operator">=</span><span class="string">&#x27;c2&#x27;</span> <span class="keyword">AND</span> s.sno<span class="operator">=</span>sc.sno);<span class="operator">/</span><span class="operator">/</span>存在量词是先做外面再做里面的</span><br></pre></td></tr></table></figure>
 <p><strong>SQL语言只有存在量词，不支持全称量词：</strong></p>
@@ -324,7 +417,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-12-02 09:00:39 / Modified: 09:05:04" itemprop="dateCreated datePublished" datetime="2021-12-02T09:00:39+08:00">2021-12-02</time>
+      <time title="Created: 2021-12-02 12:00:39 / Modified: 12:05:04" itemprop="dateCreated datePublished" datetime="2021-12-02T12:00:39+11:00">2021-12-02</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -404,7 +497,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-12-01 15:53:54 / Modified: 16:28:58" itemprop="dateCreated datePublished" datetime="2021-12-01T15:53:54+08:00">2021-12-01</time>
+      <time title="Created: 2021-12-01 18:53:54 / Modified: 19:28:58" itemprop="dateCreated datePublished" datetime="2021-12-01T18:53:54+11:00">2021-12-01</time>
     </span>
 
   
@@ -481,14 +574,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-11-30 19:09:16" itemprop="dateCreated datePublished" datetime="2021-11-30T19:09:16+08:00">2021-11-30</time>
+      <time title="Created: 2021-11-30 22:09:16" itemprop="dateCreated datePublished" datetime="2021-11-30T22:09:16+11:00">2021-11-30</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-03 08:39:25" itemprop="dateModified" datetime="2021-12-03T08:39:25+08:00">2021-12-03</time>
+        <time title="Modified: 2021-12-03 11:39:25" itemprop="dateModified" datetime="2021-12-03T11:39:25+11:00">2021-12-03</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -582,14 +675,14 @@ maxZ = \sum_{j=1}^nc_jx_j\\\sum^n_{j=1}a_{ij}x_j = b_i, i =1,2,\ldots,n\\x_j \ge
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-11-29 10:07:24" itemprop="dateCreated datePublished" datetime="2021-11-29T10:07:24+08:00">2021-11-29</time>
+      <time title="Created: 2021-11-29 13:07:24" itemprop="dateCreated datePublished" datetime="2021-11-29T13:07:24+11:00">2021-11-29</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-06 11:29:32" itemprop="dateModified" datetime="2021-12-06T11:29:32+08:00">2021-12-06</time>
+        <time title="Modified: 2021-12-06 14:29:32" itemprop="dateModified" datetime="2021-12-06T14:29:32+11:00">2021-12-06</time>
       </span>
 
   
@@ -685,14 +778,14 @@ maxZ = \sum_{j=1}^nc_jx_j\\\sum^n_{j=1}a_{ij}x_j = b_i, i =1,2,\ldots,n\\x_j \ge
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-09-24 11:07:41" itemprop="dateCreated datePublished" datetime="2021-09-24T11:07:41+08:00">2021-09-24</time>
+      <time title="Created: 2021-09-24 13:07:41" itemprop="dateCreated datePublished" datetime="2021-09-24T13:07:41+10:00">2021-09-24</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-30 16:20:29" itemprop="dateModified" datetime="2021-11-30T16:20:29+08:00">2021-11-30</time>
+        <time title="Modified: 2021-11-30 19:20:29" itemprop="dateModified" datetime="2021-11-30T19:20:29+11:00">2021-11-30</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -767,14 +860,14 @@ maxZ = \sum_{j=1}^nc_jx_j\\\sum^n_{j=1}a_{ij}x_j = b_i, i =1,2,\ldots,n\\x_j \ge
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-09-16 19:52:48" itemprop="dateCreated datePublished" datetime="2021-09-16T19:52:48+08:00">2021-09-16</time>
+      <time title="Created: 2021-09-16 21:52:48" itemprop="dateCreated datePublished" datetime="2021-09-16T21:52:48+10:00">2021-09-16</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-30 16:24:41" itemprop="dateModified" datetime="2021-11-30T16:24:41+08:00">2021-11-30</time>
+        <time title="Modified: 2021-11-30 19:24:41" itemprop="dateModified" datetime="2021-11-30T19:24:41+11:00">2021-11-30</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -869,14 +962,14 @@ maxZ = \sum_{j=1}^nc_jx_j\\\sum^n_{j=1}a_{ij}x_j = b_i, i =1,2,\ldots,n\\x_j \ge
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-09-13 10:05:56" itemprop="dateCreated datePublished" datetime="2021-09-13T10:05:56+08:00">2021-09-13</time>
+      <time title="Created: 2021-09-13 12:05:56" itemprop="dateCreated datePublished" datetime="2021-09-13T12:05:56+10:00">2021-09-13</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-30 16:25:05" itemprop="dateModified" datetime="2021-11-30T16:25:05+08:00">2021-11-30</time>
+        <time title="Modified: 2021-11-30 19:25:05" itemprop="dateModified" datetime="2021-11-30T19:25:05+11:00">2021-11-30</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -980,14 +1073,14 @@ maxZ = \sum_{j=1}^nc_jx_j\\\sum^n_{j=1}a_{ij}x_j = b_i, i =1,2,\ldots,n\\x_j \ge
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-09-13 08:58:07" itemprop="dateCreated datePublished" datetime="2021-09-13T08:58:07+08:00">2021-09-13</time>
+      <time title="Created: 2021-09-13 10:58:07" itemprop="dateCreated datePublished" datetime="2021-09-13T10:58:07+10:00">2021-09-13</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-30 16:24:54" itemprop="dateModified" datetime="2021-11-30T16:24:54+08:00">2021-11-30</time>
+        <time title="Modified: 2021-11-30 19:24:54" itemprop="dateModified" datetime="2021-11-30T19:24:54+11:00">2021-11-30</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1069,95 +1162,6 @@ maxZ = \sum_{j=1}^nc_jx_j\\\sum^n_{j=1}a_{ij}x_j = b_i, i =1,2,\ldots,n\\x_j \ge
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/img/cat.JPG">
-      <meta itemprop="name" content="Aston Jin">
-      <meta itemprop="description" content="某个人的个人主页罢了">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Aston-Jin">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/09/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="post-title-link" itemprop="url">操作系统</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-09-09 15:07:07" itemprop="dateCreated datePublished" datetime="2021-09-09T15:07:07+08:00">2021-09-09</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-30 16:25:18" itemprop="dateModified" datetime="2021-11-30T16:25:18+08:00">2021-11-30</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" itemprop="url" rel="index"><span itemprop="name">操作系统</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>老佛爷吐槽：中国人说话一直没什么逻辑</p>
-<p>老佛爷技能：把粉笔往地上一丢 粉笔就断了</p>
-<p>1.在核心态下运行的软件</p>
-<p>interface 接口 操作系统是一个硬件上的软件平台 在操作系统上进而运行application</p>
-<p>文件是操作系统虚拟出来的概念 离开了操作系统就没有这个概念</p>
-<p>1.2.3多道批处理系统</p>
-<p>中断是做切换的trigger</p>
-<p>1.3.1并发</p>
-<p>并行是好几个事情一起发生</p>
-<p>并发是好几个事情在同一个时间</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
     <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
@@ -1171,7 +1175,7 @@ maxZ = \sum_{j=1}^nc_jx_j\\\sum^n_{j=1}a_{ij}x_j = b_i, i =1,2,\ldots,n\\x_j \ge
 
 <div class="copyright">
   &copy; 2020 – 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2024</span>
   <span class="with-love">
     <i class="fa fa-bug"></i>
   </span>
