@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-05-16T04:38:59.970Z</updated>
+  <updated>2024-05-16T05:00:23.852Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>金泓宇的戒毒日记day2</title>
+    <link href="http://example.com/2024/05/16/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E6%88%92%E6%AF%92%E6%97%A5%E8%AE%B0day2/"/>
+    <id>http://example.com/2024/05/16/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E6%88%92%E6%AF%92%E6%97%A5%E8%AE%B0day2/</id>
+    <published>2024-05-16T04:39:26.000Z</published>
+    <updated>2024-05-16T05:00:23.852Z</updated>
+    
+    <content type="html"><![CDATA[<p>这几周金泓宇做的最简单的事情可能就是写代码了</p><p>有些人其实很讨厌自己脑子里的一半的工程师思维，那个需要把问题一步步拆成function才能开始工作的人生，但是写function真的好简单。</p><p>有些人可能真的需要被推一把，告诉他该干嘛，在什么时候，在哪里。金泓宇在人生中好多重要的决策下，最后都选了不决策。但是做不出决定的人是会被讨厌的吧，这好像变成那个人生中越来越清晰的画面了。所有在身边的人会慢慢的开始被一个呆在原地的人耗尽，然后金泓宇开始看不到人家的画面，看不到人生接下来会演什么。然后演一个四十多年没走出爱荷华州的人。</p>噢，Peter Hall旁边的窗碎了，但也没人能出来呢。<center><img src="/img/窗.jpg" width="50%" height="50%" /> 为什么只碎了一半呢</center>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这几周金泓宇做的最简单的事情可能就是写代码了&lt;/p&gt;
+&lt;p&gt;有些人其实很讨厌自己脑子里的一半的工程师思维，那个需要把问题一步步拆成function才能开始工作的人生，但是写function真的好简单。&lt;/p&gt;
+&lt;p&gt;有些人可能真的需要被推一把，告诉他该干嘛，在什么时候，</summary>
+      
+    
+    
+    
+    
+    <category term="金泓宇的碎碎念" scheme="http://example.com/tags/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    <category term="金泓宇的戒毒日记" scheme="http://example.com/tags/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E6%88%92%E6%AF%92%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>金泓宇的戒毒日记day1</title>
@@ -519,35 +545,6 @@ f(x)=w_1x_1+w_2x_2+\ldots+w_dx_d+b
     <category term="老佛爷的操作系统" scheme="http://example.com/tags/%E8%80%81%E4%BD%9B%E7%88%B7%E7%9A%84%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
     <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算机网络 数据链路层</title>
-    <link href="http://example.com/2021/09/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    <id>http://example.com/2021/09/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</id>
-    <published>2021-09-13T00:58:07.000Z</published>
-    <updated>2021-11-30T08:24:54.193Z</updated>
-    
-    <content type="html"><![CDATA[<p>主机五层：应用 运输 网络 链路 物理</p><p>路由器三层：网络 链路 物理</p><p>链路是一条无源的点到点的物理线路段，中间没有任何其他交换节点</p><p>数据链路：除了物理线路之外，必须有通信协议来控制数据的传输。把这些协议的硬件和软件加在链路上，就构成了数据链路</p><p>常用方法：数据链路层的工作由适配器（网卡）实现协议的硬件和软件</p><p>3.1封装帧</p><p>在一段数据的前后分别添加首部和尾部</p><p>数据链路层的帧长是首部+尾部+MTU</p><p>MTU：帧的数据部分的帧长</p><p>利用控制字符封装： 开始符：SOH（START OF HEAD） 结束符：EOT （END OF TEXT）</p><p>3.2透明传输</p><p>当数据中出现控制字符时 在SOH和EOT前加入转义字符“ESC”（其编码为1B）</p><p>如果转义字符也出现在数据当中，在其之前再插入一个转义字符，当连续接受两个转义字符时，删除前面的一个</p><p>3.3差错检测</p><p>传输错误的比特占总比特的比例为误码率BER（Bit Error Rate）</p><p>误码率和信噪比有很大关系</p><p>汉明距离：</p><p>如果要检测e个差错，则编码集的汉明距离至少为e+1</p><p>如果要纠正t个差错，则编码集的汉明距离至少为2t+1</p><p>如果要检测e个差错，同时纠正t个差错，则编码集的汉明距离至少为e+t+1</p><p>eg.纠错 000000 000111 111000 111111 汉明距离=3</p><p>​ 010111 恢复为 000111 错一位</p><p>3.4差错控制编码</p><p>奇偶检验码：在数据码后附加一个校验位，使构成的码组中1的个数为奇数，或偶数</p><p>0100101（0）奇校验</p><p>0100101（1）偶校验</p><p>奇偶检验码只能检测出奇数个错误，无法检测出偶数个错误，但是实践简单</p><p>使用水平/二维奇偶检验</p><p>3.5数据的可靠传输和流量控制</p><p>实用的停止等待协议：</p><p>在实际的数据传输过程中，传输差错是不可避免的</p><p>传输差错导致接收的数据帧差错，接收方要求发送方重发数据帧</p><p>(a)正常情况 A DATA0 -&gt; B -&gt; ACK -&gt; A -&gt; DATA1 -&gt;B -&gt;ACK</p><p>(b)数据帧错误 A DATA0 -&gt; B -&gt;(出错) NAK -&gt; A -&gt; DATA0 -&gt;B -&gt;ACK</p><p>(c)数据帧丢失 A DATA0 -&gt; B -&gt;(丢失) (重传) A -&gt; DATA0 -&gt;B -&gt;ACK</p><p>(d)确认帧丢失 A DATA0 -&gt; B -&gt; ACK（丢失） A -&gt; DATA0 -&gt;B -&gt;ACK（要是再要就从鸿福了）</p><p>所以需要解决接收方的重传问题</p><p>超时重传技术：</p><p>结点A发送完一个数据帧是，就启动一个超时计时器，此计时器又称定时器</p><p>重复帧问题：（应答帧丢失导致）</p><p>每个数据帧带上不同的发送序号，每发送一个新的数据帧就把序号加1</p><p>帧的编号问题：任何的编号系统的序号所占用的比特数都是有限的，因此在一段事件后，发送的序号就会重复</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;主机五层：应用 运输 网络 链路 物理&lt;/p&gt;
-&lt;p&gt;路由器三层：网络 链路 物理&lt;/p&gt;
-&lt;p&gt;链路是一条无源的点到点的物理线路段，中间没有任何其他交换节点&lt;/p&gt;
-&lt;p&gt;数据链路：除了物理线路之外，必须有通信协议来控制数据的传输。把这些协议的硬件和软件加在链路上，</summary>
-      
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
