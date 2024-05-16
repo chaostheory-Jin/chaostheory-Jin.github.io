@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-05-15T04:07:16.624Z</updated>
+  <updated>2024-05-16T04:38:59.970Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>金泓宇的戒毒日记</title>
+    <title>金泓宇的戒毒日记day1</title>
     <link href="http://example.com/2024/05/15/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E6%88%92%E6%AF%92%E6%97%A5%E8%AE%B0/"/>
     <id>http://example.com/2024/05/15/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E6%88%92%E6%AF%92%E6%97%A5%E8%AE%B0/</id>
     <published>2024-05-15T02:51:50.000Z</published>
-    <updated>2024-05-15T04:07:16.624Z</updated>
+    <updated>2024-05-16T04:38:59.970Z</updated>
     
     <content type="html"><![CDATA[<p>人真的会因为戒毒陷入巨大panic</p><p>特别是在连着两个小时没有任何进展还只能对着墙面壁的时候</p><p>他真实的魂穿那个17岁在上海图书馆四楼的那个小孩</p><p>不知所措 又张不开嘴</p>]]></content>
     
@@ -39,6 +39,8 @@
     
     
     <category term="金泓宇的碎碎念" scheme="http://example.com/tags/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    <category term="金泓宇的戒毒日记" scheme="http://example.com/tags/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E6%88%92%E6%AF%92%E6%97%A5%E8%AE%B0/"/>
     
   </entry>
   
