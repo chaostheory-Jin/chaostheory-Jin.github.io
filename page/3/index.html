@@ -89,7 +89,7 @@
         <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">12</span></a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">5</span></a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">27</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">28</span></a></li>
         <li class="menu-item menu-item-schedule"><a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a></li>
   </ul>
 </nav>
@@ -135,7 +135,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">27</span>
+          <span class="site-state-item-count">28</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -197,6 +197,108 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/16/%E8%AE%A1%E7%BD%91%E5%BA%94%E7%94%A8%E5%B1%82/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/cat.JPG">
+      <meta itemprop="name" content="Aston Jin">
+      <meta itemprop="description" content="某个人的个人主页罢了">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Aston-Jin">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/09/16/%E8%AE%A1%E7%BD%91%E5%BA%94%E7%94%A8%E5%B1%82/" class="post-title-link" itemprop="url">计网应用层</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-09-16 21:52:48" itemprop="dateCreated datePublished" datetime="2021-09-16T21:52:48+10:00">2021-09-16</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-11-30 19:24:41" itemprop="dateModified" datetime="2021-11-30T19:24:41+11:00">2021-11-30</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index"><span itemprop="name">计算机网络</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>应用层 &lt;----&gt; 数据传输层</p>
+<p>数据传输层提供 socket api</p>
+<p>网络应用的体系结构：</p>
+<p>客户端——服务器模式（C/S）</p>
+<p>服务器：持续运行 相应资源 软件 硬件数据资源都在服务器上</p>
+<p>客户端：可以有动态地址 请求资源</p>
+<p>问题：可扩展性差 架构随着用户的增加 达到阈值时 性能急剧下降</p>
+<p>​ 可靠性差 需求服务器持续运行</p>
+<p>对等体 (P2P)</p>
+<p>平滑扩展 几乎没有持续运行的服务器</p>
+<p>节点提供的服务能力仅在其上线时提供</p>
+<p>混合体(C/S &amp; P2P)</p>
+<p>Napster QQ</p>
+<p>双方的通信是P2P 注册是C/S</p>
+<p>进程通信</p>
+<p>问题：标识自己的地址 唯一的地址 别人能定位到</p>
+<p>​ 使用传输层的api</p>
+<p>寻址：在哪个主机ip 是TCP/UDP 在哪个端口</p>
+<p>telnet: 23 web: 80 ftp: 21</p>
+<p>应用进程间的通信可以由两个端节点表示</p>
+<p>层间接口携带的信息：谁发的 发给谁 发了什么</p>
+<p>端口号(port) ip是主机的标识 ip上有很多的应用进程</p>
+<p>socket：使得通信的信息量变少 便于管理</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
