@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-05-18T07:04:11.596Z</updated>
+  <updated>2024-05-19T04:05:38.838Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>金泓宇的戒毒日记day5</title>
+    <link href="http://example.com/2024/05/19/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E6%88%92%E6%AF%92%E6%97%A5%E8%AE%B0day5/"/>
+    <id>http://example.com/2024/05/19/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E6%88%92%E6%AF%92%E6%97%A5%E8%AE%B0day5/</id>
+    <published>2024-05-19T04:02:58.000Z</published>
+    <updated>2024-05-19T04:05:38.838Z</updated>
+    
+    <content type="html"><![CDATA[<p>你看，虽然炸药包很重，但听起来没有那么糟糕，只是在包里装了太多东西了。人会一眼就接住那个眼神是有道理的，金泓宇今天早上在看闻香识女人里，阿尔帕西诺问，你知道为什么车那么重嘛。Cuz you got the weight of the world on your shoulder.</p>Also, 另外半句话他被问。If you are tangled up，just tango on. 我有点不喜欢这句话的中文翻译，但是如果面前的路已经开始变得乱糟糟了，那就继续走下去吧。If we are tangled up, can we tango on?<center><img src="/img/pathnon.jpg" width="50%" height="50%" /> 会一起去嘛 一起去吧.</center>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;你看，虽然炸药包很重，但听起来没有那么糟糕，只是在包里装了太多东西了。人会一眼就接住那个眼神是有道理的，金泓宇今天早上在看闻香识女人里，阿尔帕西诺问，你知道为什么车那么重嘛。Cuz you got the weight of the world on your should</summary>
+      
+    
+    
+    
+    
+    <category term="金泓宇的碎碎念" scheme="http://example.com/tags/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    <category term="金泓宇的戒毒日记" scheme="http://example.com/tags/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E6%88%92%E6%AF%92%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>金泓宇的戒毒日记day4</title>
@@ -505,35 +529,6 @@ f(x)=w_1x_1+w_2x_2+\ldots+w_dx_d+b
     <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
     
     <category term="数据库原理" scheme="http://example.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>emo</title>
-    <link href="http://example.com/2021/09/24/emo/"/>
-    <id>http://example.com/2021/09/24/emo/</id>
-    <published>2021-09-24T03:07:41.000Z</published>
-    <updated>2021-11-30T08:20:29.728Z</updated>
-    
-    <content type="html"><![CDATA[<p>这个故事叫：</p><p>哭也哭了 骂也骂了 觉也睡了</p><p>该干活了</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;这个故事叫：&lt;/p&gt;
-&lt;p&gt;哭也哭了 骂也骂了 觉也睡了&lt;/p&gt;
-&lt;p&gt;该干活了&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="金泓宇的碎碎念" scheme="http://example.com/categories/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-    
-    
-    <category term="金泓宇的碎碎念" scheme="http://example.com/tags/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-    
-    <category term="emo" scheme="http://example.com/tags/emo/"/>
     
   </entry>
   

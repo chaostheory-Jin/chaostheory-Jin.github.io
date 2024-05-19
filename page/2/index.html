@@ -89,7 +89,7 @@
         <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">12</span></a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">5</span></a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">28</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">29</span></a></li>
         <li class="menu-item menu-item-schedule"><a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a></li>
   </ul>
 </nav>
@@ -135,7 +135,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-count">29</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -197,6 +197,89 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/13/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%B8%89%E5%91%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/cat.JPG">
+      <meta itemprop="name" content="Aston Jin">
+      <meta itemprop="description" content="某个人的个人主页罢了">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Aston-Jin">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/12/13/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%B8%89%E5%91%A8/" class="post-title-link" itemprop="url">数据库第三周</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-12-13 13:00:52 / Modified: 14:35:40" itemprop="dateCreated datePublished" datetime="2021-12-13T13:00:52+11:00">2021-12-13</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="视图">视图</h3>
+<p><strong>视图的定义：</strong>(1)视图是从一个表或者多个表里导出的。(2)视图是一张虚表。(3)视图定义后可以和表一样操作</p>
+<p>数据不在视图里面，在原来的表里面</p>
+<p>视图的作用：安全</p>
+<p>1.SQL语句创建视图：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">VIEW</span><span class="operator">&lt;</span>name<span class="operator">&gt;</span>[<span class="operator">&lt;</span>list<span class="operator">&gt;</span>] <span class="keyword">AS</span> <span class="operator">&lt;</span>subselect<span class="operator">&gt;</span>[<span class="keyword">WITH</span> <span class="keyword">CHECK</span> OPTION]</span><br></pre></td></tr></table></figure>
+<p>2.SQL视图的删除：只删除视图的定义，和原来表里面的数据一点关系都没有</p>
+<p>视图的查询：DBMS对视图的查询会转换为对表的查询</p>
+<p>3.视图的更新</p>
+<p>视图的更新是有条件限制的。（体现了视图的安全性）</p>
+<p>（1）从单个关系仅使用了选择和投影导出的 这个是好更新的</p>
+<p>（2）列出现表达式和常数是不好INSERT和UPDATE的(不好更新的太多了，不想记了)</p>
+<p>老板四十岁以后悟出的道理：要大量的接触社会，还一定要发SCI，还一定要对社会有贡献</p>
+<h3 id="嵌入式sql">嵌入式SQL</h3>
+<p>嵌入式SQL的使用规定：</p>
+<p>使用SQL语句逐一从游标中获取记录，并赋给主变量，由宿主语言作进一步的处理。游标相当于里面放了一张表，分四个步骤：</p>
+<p>（1）定义游标（2）打开游标（3）推进游标（4）关闭游标</p>
+<p>如果查询结果只是一行，那只要定义几个变量</p>
+<p>如果查询结果是一张表，一定要靠游标完成</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -984,88 +1067,6 @@ maxZ = \sum_{j=1}^nc_jx_j\\\sum^n_{j=1}a_{ij}x_j = b_i, i =1,2,\ldots,n\\x_j \ge
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sno <span class="keyword">FROM</span> sc <span class="keyword">GROUP</span> <span class="keyword">BY</span> sno <span class="keyword">HAVING</span> <span class="built_in">COUNT</span>(cno)<span class="operator">&gt;=</span><span class="number">2</span>;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> x.sno <span class="keyword">FROM</span> sc x,sc y <span class="keyword">WHERE</span> x.sno<span class="operator">=</span>y.sno <span class="keyword">AND</span> x.cno<span class="operator">&lt;&gt;</span>y.cno;<span class="operator">/</span><span class="operator">/</span>自身联接 同一个人的课程号不同</span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> x.sno,sname <span class="keyword">FROM</span> s,sc x,sc y <span class="keyword">WHERE</span> s.sno<span class="operator">=</span>x.sno <span class="keyword">AND</span> s.sno<span class="operator">=</span>y.sno <span class="keyword">AND</span> x.cno<span class="operator">=</span><span class="string">&#x27;c1&#x27;</span> <span class="keyword">AND</span> y.cno<span class="operator">=</span><span class="string">&#x27;c2&#x27;</span>;</span><br></pre></td></tr></table></figure>
 <p>复合条件联接：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sname,grade <span class="keyword">FROM</span> s,sc,c <span class="keyword">WHERE</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">AND</span> c.cno<span class="operator">=</span>sc.cno <span class="keyword">AND</span> cname<span class="operator">=</span><span class="string">&#x27;VB&#x27;</span> <span class="keyword">AND</span> grade<span class="operator">&gt;</span><span class="number">70</span>;<span class="operator">/</span><span class="operator">/</span>查修了VB且超<span class="number">70</span>分</span><br><span class="line"><span class="keyword">SELECT</span> s.sno,sname <span class="keyword">FROM</span> s,sc <span class="keyword">WHERE</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">GROUP</span> <span class="keyword">BY</span> s.sno <span class="keyword">HAVING</span> <span class="built_in">min</span>(grade)<span class="operator">&gt;</span><span class="number">70</span></span><br><span class="line"><span class="keyword">SELECT</span> sno,sname,<span class="built_in">count</span>(cno) <span class="keyword">FROM</span> s,sc <span class="keyword">WHERE</span> s.sno<span class="operator">=</span>sc.sno <span class="keyword">GROUP</span> <span class="keyword">BY</span> s.sno <span class="keyword">HAVING</span> <span class="built_in">COUNT</span>(cno)<span class="operator">&gt;</span><span class="number">5</span> <span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="number">3</span> <span class="keyword">DESC</span>,<span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/24/emo/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/img/cat.JPG">
-      <meta itemprop="name" content="Aston Jin">
-      <meta itemprop="description" content="某个人的个人主页罢了">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Aston-Jin">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/09/24/emo/" class="post-title-link" itemprop="url">emo</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-09-24 13:07:41" itemprop="dateCreated datePublished" datetime="2021-09-24T13:07:41+10:00">2021-09-24</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-30 19:20:29" itemprop="dateModified" datetime="2021-11-30T19:20:29+11:00">2021-11-30</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E9%87%91%E6%B3%93%E5%AE%87%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/" itemprop="url" rel="index"><span itemprop="name">金泓宇的碎碎念</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>这个故事叫：</p>
-<p>哭也哭了 骂也骂了 觉也睡了</p>
-<p>该干活了</p>
 
       
     </div>
