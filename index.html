@@ -305,7 +305,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2024-05-30 11:11:12 / Modified: 11:12:30" itemprop="dateCreated datePublished" datetime="2024-05-30T11:11:12+10:00">2024-05-30</time>
+      <time title="Created: 2024-05-30 11:11:12 / Modified: 12:53:54" itemprop="dateCreated datePublished" datetime="2024-05-30T11:11:12+10:00">2024-05-30</time>
     </span>
 
   
@@ -319,6 +319,39 @@
     
     <div class="post-body" itemprop="articleBody">
           <h3 id="elasticsearch-i-hate-this-database">Elasticsearch (I hate this database)</h3>
+<p>“Big data” challenges and architectures</p>
+<p>Four V in big data, Volume, Velocity(the frequency of new data brought in system), Variety(complexity of data schema), Veracity(more data, more diverse source, more unstructured data)</p>
+<p>no relational and no SQL, SQL did a great job on consistency, but not work for big data</p>
+<p>Data model for distributed system,</p>
+<p>key-value store(fast, structured), BigTable DBMS, Document-oriented DBMS(store data as structured files, eg.Elasticsearch)</p>
+<p>Database cluster: why we need DB as cluster also</p>
+<p>Distribute computing load over multiple computer affording availability</p>
+<p>Store multiple copy of data</p>
+<p>shard is a partition of your database(take as a part, also the same shards can be stored in different nodes, and we can choose how many replicates we want to store)</p>
+<p>Federated architecture DB: many nodes with different tables, but only one entry node. Different DBs with different tables run on many nodes</p>
+<p><strong>ElasticSearch Cluster architecture:</strong></p>
+<p>two nodes type, Master and data node; one node can have more than one node type.</p>
+<p>More than one node can have master role, but only one node in cluster can be a master at the same time(the other nodes with master role will become master-eligible)</p>
+<p>every node can act as a coordinate node(coordinating query execution)</p>
+<p>indexes can have shards and replicates, also elasticsearch has status green&amp;yellow(indicates that there is no sufficient nodes for distributing shards and replicates)</p>
+<p><strong>consistency</strong>(client receive same answer from all node of the cluster, <strong>availability</strong>(receive response from at least one node, <strong>partition-tolerance</strong>(keep operating when one or more nodes offline)</p>
+<p>Brewer's Cap Theorem, you can only achieve two of them</p>
+<p>to achieve two of them:</p>
+<p>Consistency and availability: <strong>two phase commit</strong></p>
+<p>when the cluster is co-located, it works great, but not good for distributed</p>
+<p>Availability and partition-tolerance: Multi-Version Concurrency Control (<strong>MVCC</strong>)</p>
+<p>Consistency and partition-tolerance: <strong>Paxos</strong>, in this algorithm, every node either a proposer or an accepter</p>
+<p>Why Document-Oriented DB for big data?</p>
+<p>sharding: shards in the partitioning of a DB horizontally, database rows or documents are partitioned into subsets and are stored on different nodes</p>
+<p>replication: the action of the same row or documents on different nodes to achieve fault tolerance</p>
+<h2 id="finally-elasticsearch-now">Finally ElasticSearch now</h2>
+<p>pros: full-text search, retrieval of time-based data, storing unstructured data</p>
+<p>cons: bad at lined data,</p>
+<p><strong>Concepts:</strong></p>
+<p><strong>Index:</strong> an index is comparable to a DB in relational DBMS, <strong>Documents:</strong> data item of an index, <strong>Data steam:</strong> a set of indexes follow the same naming pattern, <strong>Shard:</strong> horizontal partition of an index, Replicates, <strong>Node:</strong> an instance of ES, <strong>Cluster:</strong> multiple nodes that cooperate to manage the same index</p>
+<p><strong>Components:</strong></p>
+<p>ES, FileBeat: the component that listens for updates in files, and loads the updates into indexes, MetricBeat: monitor the status of system, Logstash: transfer data by data sources,Kibana: frontend user interface</p>
+<p>scaling in ES either be horizontal(adding more nodes to a cluster) or vertical(provisioning a more powerful node)</p>
 
       
     </div>
