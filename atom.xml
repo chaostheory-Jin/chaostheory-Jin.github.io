@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-05-30T01:03:56.386Z</updated>
+  <updated>2024-05-30T01:12:30.715Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CCC review W8</title>
+    <link href="http://example.com/2024/05/30/W8/"/>
+    <id>http://example.com/2024/05/30/W8/</id>
+    <published>2024-05-30T01:11:12.000Z</published>
+    <updated>2024-05-30T01:12:30.715Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="elasticsearch-i-hate-this-database">Elasticsearch (I hate this database)</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;elasticsearch-i-hate-this-database&quot;&gt;Elasticsearch (I hate this database)&lt;/h3&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="COMP90024" scheme="http://example.com/tags/COMP90024/"/>
+    
+    <category term="墨尔本大学倒霉课程" scheme="http://example.com/tags/%E5%A2%A8%E5%B0%94%E6%9C%AC%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>CCCreview system test</title>
@@ -495,37 +520,6 @@ f(x)=w_1x_1+w_2x_2+\ldots+w_dx_d+b
     <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
     
     <category term="智能系统控制" scheme="http://example.com/tags/%E6%99%BA%E8%83%BD%E7%B3%BB%E7%BB%9F%E6%8E%A7%E5%88%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>运筹与优化第一周</title>
-    <link href="http://example.com/2021/11/30/%E8%BF%90%E7%AD%B9%E4%B8%8E%E4%BC%98%E5%8C%96%E7%AC%AC%E4%B8%80%E5%91%A8/"/>
-    <id>http://example.com/2021/11/30/%E8%BF%90%E7%AD%B9%E4%B8%8E%E4%BC%98%E5%8C%96%E7%AC%AC%E4%B8%80%E5%91%A8/</id>
-    <published>2021-11-30T11:09:16.000Z</published>
-    <updated>2021-12-03T00:39:25.954Z</updated>
-    
-    <content type="html"><![CDATA[<p>这是一门数学课，mly说不多学点数学就没有以后了</p><p><strong>构建模型的步骤：</strong></p><p>1.从问题描述中筛选出数据和参数</p><p>2.定义决策变量集合</p><p>3.基于数据和决策变量构建目标函数</p><p>4.建立等式或不等式约束条件</p><h3 id="课程主要内容">课程主要内容：</h3><p><strong>线性规划</strong>：图解法，单纯形法</p><p><strong>非线性规划</strong>：无约束和有约束问题，梯度下降，牛顿法</p><p><strong>整数规划</strong></p><p><strong>动态规划</strong>：多阶段决策过程最优化</p><p>叮咣太ppt做的不行</p><h3 id="线性规划">线性规划</h3><p>线性规划的数学模型的三要素：</p><p>目标函数，决策变量，约束条件</p><p>线性规划模型的特征：约束条件是一组多个决策变量的不等式或等式</p><p><strong>线性规划问题的标准形式：</strong> <span class="math display">\[maxZ = \sum_{j=1}^nc_jx_j\\\sum^n_{j=1}a_{ij}x_j = b_i, i =1,2,\ldots,n\\x_j \geq 0,j =1,2,\ldots,n\]</span> <strong>线性规划问题转换标准形式：</strong></p><p>目标函数的转换：如果是求极小值，就Z‘=-Z</p><p>变量的转换：无约束变量</p><p>闭环比开环适应性好</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;这是一门数学课，mly说不多学点数学就没有以后了&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;构建模型的步骤：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;1.从问题描述中筛选出数据和参数&lt;/p&gt;
-&lt;p&gt;2.定义决策变量集合&lt;/p&gt;
-&lt;p&gt;3.基于数据和决策变量构建目标函数&lt;/p&gt;
-&lt;p&gt;</summary>
-      
-    
-    
-    
-    <category term="运筹与优化" scheme="http://example.com/categories/%E8%BF%90%E7%AD%B9%E4%B8%8E%E4%BC%98%E5%8C%96/"/>
-    
-    
-    <category term="上海大学倒霉课程" scheme="http://example.com/tags/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%80%92%E9%9C%89%E8%AF%BE%E7%A8%8B/"/>
-    
-    <category term="运筹与优化" scheme="http://example.com/tags/%E8%BF%90%E7%AD%B9%E4%B8%8E%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
